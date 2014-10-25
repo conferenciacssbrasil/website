@@ -1,7 +1,7 @@
 CSS Conf Brasil
 =======
 
-[Visit the website][http://www.cssconfbrasil.com.br]
+[Visit the website](http://www.cssconfbrasil.com.br)
 
 Some steps:
 
