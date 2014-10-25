@@ -1,0 +1,21 @@
+/*  ==========================================================================
+    Forms
+    ========================================================================== */
+
+    @media only screen {
+
+        /*  Default
+            ========================================================================== */
+            .form fieldset {
+                border: none;
+                padding: 15px;
+            }
+
+    }
+
+    /*
+     * CSS for devices with resolution bigger than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+    }

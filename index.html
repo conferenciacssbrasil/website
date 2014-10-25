@@ -1,0 +1,115 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Event">
+<head>
+    <meta charset="utf-8">
+    <title itemprop="name">CSS Conf Brasil</title>
+
+    <!-- Meta -->
+    <meta name="description" content="A primeira conferência sobre CSS do Brasil.">
+    <meta name="keywords" content="css, conferencia, evento, desenvolvimento, web, front-end">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and SVG logo -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="logo" type="image/svg" href="http://cssconfbrasil.com.br/cssconf-logo.svg">
+
+    <!-- Facebook -->
+    <meta property="fb:app_id" content="822801361104391" />
+    <meta property="fb:admins" content="100000808831074" />
+    <meta property="og:site_name" content="CSS Conf Brasil"/>
+    <meta property="og:title" content="CSS Conf Brasil 2015" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.cssconfbrasil.com.br" />
+    <meta property="og:image" content="http://www.cssconfbrasil.com.br/build/img/logo-share.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="build/css/main.min.css">
+
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-56024822-1');ga('send','pageview');
+    </script>
+</head>
+<body class="preload">
+    <div id="loading" class="loading">
+        <div class="spinner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!-- Access Key -->
+    <a href="#conteudo" class="sr-only go-content" tabindex="1" accesskey="1">Ir para conteúdo</a>
+
+    <!-- Header -->
+    <header class="header row" role="banner">
+        <h1 class="logo" role="logo">
+            <div class="hold-squares">
+                <div class="square">
+                    <span class="letter">C</span>
+                </div>
+                <div class="square">
+                    <span class="letter">S</span>
+                </div>
+                <div class="square">
+                    <span class="letter">S</span>
+                </div>
+            </div>
+            <div class="property block">{ conf: brasil; }</div>
+            <div class="year block">2015</div>
+        </h1>
+    </header>
+
+    <!-- Main -->
+    <main class="main" id="#conteudo" role="main">
+
+        <p class="lead">
+            <span class="block">1ª Conferência de CSS do Brasil acontecerá em <span itemprop="location">São Paulo</span>entre Abril/Maio 2015.</span>
+            <span class="block">E ai vai ficar de fora desse mega evento?</span>
+        </p>
+
+        <span class="arrow" aria-hidden="true"></span>
+
+        <a class="btn btn-subscription" href="#">Inscreva-se já</a>
+
+        <p class="small" itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">Primeiro lote promocional <span itemprop="lowPrice">R$:50,00</span></p>
+
+        <ul class="share">
+            <li>
+                <a href="https://www.facebook.com/pages/CSS-CONF-Brasil/726531330748789?fref=ts">
+                    <span class="sr-only">Facebook</span>
+                    <span class="icon-facebook" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/cssconfbrasil">
+                    <span class="sr-only">Github</span>
+                    <span class="icon-github" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/cssconfbrasil">
+                    <span class="sr-only">Twitter</span>
+                    <span class="icon-twitter" aria-hidden="true"></span>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <script>
+    var config = {
+        loading: document.getElementById('loading'),
+        hold: document.getElementsByTagName('body')
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        config.loading.classList.add('complete');
+        setTimeout(function(){
+            config.hold[0].classList.remove('preload');
+        }, 1250);
+    });
+    </script>
+</body>
+</html>

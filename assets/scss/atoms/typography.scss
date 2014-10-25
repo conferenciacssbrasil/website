@@ -1,0 +1,84 @@
+/*  ==========================================================================
+Typography
+========================================================================== */
+
+/*  Font face
+    ========================================================================== */
+    @font-face {
+        font-family: 'gabriolaregular';
+        src: url('../fonts/gabriola/gabriola-webfont.eot');
+        src: url('../fonts/gabriola/gabriola-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gabriola/gabriola-webfont.woff2') format('woff2'),
+        url('../fonts/gabriola/gabriola-webfont.woff') format('woff'),
+        url('../fonts/gabriola/gabriola-webfont.ttf') format('truetype'),
+        url('../fonts/gabriola/gabriola-webfont.svg#gabriolaregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'calgary_script_otregular';
+        src: url('../fonts/calgary/calgary_script-webfont.eot');
+        src: url('../fonts/calgary/calgary_script-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/calgary/calgary_script-webfont.woff2') format('woff2'),
+        url('../fonts/calgary/calgary_script-webfont.woff') format('woff'),
+        url('../fonts/calgary/calgary_script-webfont.ttf') format('truetype'),
+        url('../fonts/calgary/calgary_script-webfont.svg#calgary_script_otregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+@media only screen {
+
+    body {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust:none;
+        font-family: 'gabriolaregular';
+        font-size: 16px;
+    }
+
+/*  Titles
+    ========================================================================== */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {}
+
+/*  Texts
+    ========================================================================== */
+    p {
+        color: $color-default;
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+
+    .small {
+        font-size: 18px;
+    }
+
+    
+/*  Links
+    ========================================================================== */
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    }
+
+
+/*
+* CSS for devices with resolution bigger than breakpoint
+*/
+
+@media only screen and (min-width: $breakpoint) {
+
+}

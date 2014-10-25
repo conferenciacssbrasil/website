@@ -1,0 +1,46 @@
+/*  ==========================================================================
+    Animation
+    ========================================================================== */
+
+    /*  Logo
+        ========================================================================== */
+        .square:nth-child(1) { @include animation(letterC 0.75s both); }
+        .square:nth-child(2) { @include animation(letterS 0.75s 0.4s both); }
+        .square:nth-child(3) { @include animation(letterS_ 0.75s 1s both); }
+
+        .square:nth-child(1) .letter { @include animation(cssLetters 0.5s 1.5s both); }
+        .square:nth-child(2) .letter { @include animation(cssLetters 0.5s 1.75s both); }
+        .square:nth-child(3) .letter { @include animation(cssLetters 0.5s 2s both); }
+
+        .property { @include animation(
+            typing 1.75s 2.5s steps(14, end) both,
+            cursorText 1s 2s 3 both);
+        }
+
+        .year { @include animation(fadeIn 1s 6.25s both); }
+
+    /*  Info
+        ========================================================================== */
+        .lead span { @include animation(fadeIn 1s 5.75s ease both); }
+        .lead span + span { @include animation(fadeIn 1s 7.5s ease both); }
+        .arrow { @include animation(fadeInDown 0.75s 8.5s ease both); }
+        .btn-subscription { @include animation(bounceIn 0.75s 9.25s ease both); }
+        .small { @include animation(fadeIn 0.75s 10s ease both); }
+        .share li:nth-child(1) { @include animation(fadeIn 0.5s 10.75s ease both); }
+        .share li:nth-child(2) { @include animation(fadeIn 0.5s 11s ease both); }
+        .share li:nth-child(3) { @include animation(fadeIn 0.5s 11.25s ease both); }
+
+        .preload .logo,
+        .preload .square .letter,
+        .preload .lead span,
+        .preload .square,
+        .preload .share,
+        .preload .btn,
+        .preload .arrow,
+        .preload .small,
+        .preload .property {
+            -webkit-animation-play-state: paused;
+               -moz-animation-play-state: paused;
+                 -o-animation-play-state: paused;
+                    animation-play-state: paused;
+        }

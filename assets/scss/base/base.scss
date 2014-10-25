@@ -1,0 +1,72 @@
+/*  ==========================================================================
+    Base
+    ========================================================================== */
+    ::-moz-selection {
+        background: #666;
+        text-shadow: none;
+        color: #fff;
+    }
+
+    ::selection {
+        background: #666;
+        text-shadow: none;
+        color: #fff;
+    }
+
+    img,
+    object,
+    embed,
+    iframe { max-width: 100%; }
+
+    img { height: auto; }
+
+    * { @include box-sizing(); }
+
+/*  ==========================================================================
+    Helper classes
+    ========================================================================== */
+    .hover { @include transition(opacity 0.25s ease); }
+    .hover:hover { @include opacity(0.8); }
+
+    .pull-left { float: left; }
+    .pull-right { float: right; }
+
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+    .text-center { text-align: center; }
+    .text-justify { text-align: justify; }
+
+    .hide { display: none; }
+    .block { display: block; }
+    .space { margin-bottom: $space; }
+
+    /* Esconde elemento para todos usuários exceto leitores de tela */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        border: 0;
+    }
+
+    .sr-only:active,
+    .sr-only:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    /*  Go content
+        ========================================================================== */
+        .go-content {
+            padding: 2px 0;
+            font-size: 14px;
+            text-align: center;
+            display: block;
+        }

@@ -1,0 +1,175 @@
+/*  ==========================================================================
+    Navigation
+    ========================================================================== */
+
+    @media only screen {
+
+        /*  Header
+            ========================================================================== */
+            .header { margin-top: 50px; }
+
+            /*  Logo
+                ========================================================================== */
+                .logo {
+                    position: relative;
+                    text-align: center;
+                    line-height: 1;
+                }
+
+                .hold-squares { min-height: 150px; }
+
+                .square {
+                    width: 85px;
+                    height: 85px;
+                    display: inline-block;
+                    margin: 0;
+                    @include transform(rotate(45deg));
+                    position: relative;
+                    @include box-shadow(0 0 19px 1px rgba(0,0,0, .3) inset);
+                }
+
+                .letter {
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    font-family: 'calgary_script_otregular';
+                    text-shadow: 3px 3px 0 rgba(0,0,0,.3);
+                    font-size: 60px;
+                    line-height: 85px;
+                    @include transform(rotate(-45deg) translateX(-5px));
+                }
+
+                /* Specific blocks */
+                .square:nth-child(1) {
+                    @include transform(rotate(45deg) translate(6px, -40px));
+                    background-color: $color-primary;
+                    z-index: 10;
+                }
+
+                .square:nth-child(2) {
+                    @include transform(rotate(45deg) translate(25px, 25px));
+                    background-color: $color-secondary;
+                    z-index: 5;
+                }
+
+                .square:nth-child(3) {
+                    @include transform(rotate(45deg) translate(-40px, 6px));
+                    background-color: $color-terciary;
+                    z-index: 1;
+                }
+
+                /* About conf */
+                .property {
+                    font-size: 72px;
+                    text-align: center;
+                    font-weight: normal;
+                    line-height: 36px;
+                    line-height: 1.2;
+                    height: 78px;
+                    overflow: hidden;
+                    white-space:nowrap;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-right: 5px solid $color-default;
+                }
+
+                .year {
+                    color: $color-terciary;
+                    text-align: center;
+                    line-height: 0.5;
+                    font-size: 60px;
+                    height: 45px;
+                    font-weight: normal;
+                }
+
+
+        /*  Footer
+            ========================================================================== */
+
+            /*  Social networks
+                ========================================================================== */
+                .share {
+                    list-style: none;
+                    padding: 0;
+                    margin: 40px 0 0;
+
+                    li {
+                        display: inline-block;
+                    }
+
+                    a {
+                        color: #fff;
+                        display: block;
+                        font-size: 20px;
+                        width: 50px;
+                        height: 50px;
+                        text-align: center;
+                        margin: 0;
+                        position: relative;
+                        @include transform(rotate(45deg));
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+
+                        > span {
+                            display: block;
+                            @include transform(rotate(-45deg));
+                            line-height: 50px;
+                        }
+
+                    }
+
+                    /* Specific blocks */
+                    li:nth-child(1) {
+                        a {
+                            @include transform(rotate(45deg) translate(6%, -44%));
+                            background-color: #20409a;
+                            z-index: 1;
+
+                            &:hover {
+                                background-color: darken(#20409a, 10%);
+                            }
+                        }
+                    }
+
+                    li:nth-child(2) {
+                        a {
+                            @include transform(rotate(45deg) translate(30%, 30%));
+                            background-color: #050707;
+
+                            z-index: 5;
+                            &:hover {
+                                background-color: darken(#050707, 10%);
+                            }
+                        }
+                    }
+
+                    li:nth-child(3) {
+                        a {
+                            @include transform(rotate(45deg) translate(-43%, 6%));
+                            background-color: #52caf5;
+                            z-index: 9;
+
+                            &:hover {
+                                background-color: darken(#52caf5, 10%);
+                            }
+                        }
+                    }
+                }
+
+    }
+
+    /*
+     * CSS for devices with resolution bigger than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+
+        /*  Header
+            ========================================================================== */
+
+        /*  Footer
+            ========================================================================== */
+
+   }
