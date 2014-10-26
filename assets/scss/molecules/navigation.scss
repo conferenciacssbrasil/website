@@ -63,9 +63,8 @@
                     font-size: 72px;
                     text-align: center;
                     font-weight: normal;
-                    line-height: 36px;
-                    line-height: 1.2;
-                    height: 78px;
+                    line-height: 1.7;
+                    height: auto;
                     overflow: hidden;
                     white-space:nowrap;
                     margin-left: auto;
@@ -85,13 +84,17 @@
 
         /*  Footer
             ========================================================================== */
+            .footer {
+                margin-top: 50px;
+                text-align: center;
+            }
 
             /*  Social networks
                 ========================================================================== */
                 .share {
                     list-style: none;
                     padding: 0;
-                    margin: 40px 0 0;
+                    margin: 0 0 65px;
 
                     li {
                         display: inline-block;
@@ -158,6 +161,19 @@
                     }
                 }
 
+            /*  List holding
+                ========================================================================== */
+                .list-holding {
+                    margin: 15px 0;
+                    padding: 0;
+                    list-style-type: none;
+                }
+
+                .list-holding li {
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+
     }
 
     /*
@@ -168,6 +184,10 @@
 
         /*  Header
             ========================================================================== */
+
+            /*  Logo
+                ========================================================================== */
+                .property { line-height: 1; }
 
         /*  Footer
             ========================================================================== */

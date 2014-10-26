@@ -15,34 +15,13 @@
         /*  Arrow
             ========================================================================== */
             .arrow {
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAeCAYAAACxHzfjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGNjdERUE0Nzk4MThFMzExOERCOEYyQTNGM0IwNkNBNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpERUM2RTI4QjVCN0YxMUU0ODk3OUQ1NkYxNTUyNDQwQiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpERUM2RTI4QTVCN0YxMUU0ODk3OUQ1NkYxNTUyNDQwQiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDAxNzlDNzMwRTIwNjgxMTgyMkFEQUIxNEZERTY5OEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjY3REVBNDc5ODE4RTMxMThEQjhGMkEzRjNCMDZDQTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4MCVXKAAABEUlEQVR42szXsQ6CMBAG4KpNWPsINzoyOvb9n4LR0VESMV5NSLRi6fX+Fi5pygDXz6MgdzIZYbuuP1p75nF7TtPdKIPzOc514eE439UAEvYh6ccxKfNRyDNj52MIMFqEFECKq1oMXQJqoKlriqApYAk051wRNAcoXFzyY9ahfILPBWbexpJtEaD+L1D5xBLqAVv0aIBLKC3wx4UARlCPAH5tQZ4dKuFjHAdO+p4NLhy8msiosi+rAvcGXXVsDc1ev+Sljvh8ExdI8vcIAuK/hHYBbAGFACMogYEEA9aoKLSCNaBVgQhoE6AG2hRY2Ga0Bwobtu2AgtZ3W2DqPYpqIdBQeI8zxwEN5SmMAdlCvAQYAEwIMkUsiJx9AAAAAElFTkSuQmCC);
+                width: 41px;
+                height: 30px;
                 display: block;
-                position: relative;
-                height: 18px;
-                margin-bottom: 25px;
-
-                &:before,
-                &:after {
-                    content: '';
-                    border: $gray-light solid 1px;
-                    height: 18px;
-                    @include center-h();
-                    bottom: 0;
-                    width: 12px;
-                }
-
-                &:before {
-                    @include transform(rotate(-45deg));
-                    border-bottom: 2px solid $gray-white;
-                    margin-left: -18px;
-                    margin-bottom: 10px;
-                    z-index: 2;
-                }
-                &:after {
-                    @include transform(rotate(45deg));
-                    height: 30px;
-                    z-index: 1;
-                }
+                margin: 10px auto 20px;
             }
+
 
         /*  Loading
             ========================================================================== */
@@ -52,7 +31,7 @@
                 width: 100%;
                 height: 100%;
                 position: fixed;
-                @include transition(all 1.25s 1s cubic-bezier(0.680, -0.550, 0.265, 1.550));
+                @include transition(all 1s);
             }
 
             .circle {
@@ -68,7 +47,7 @@
                 border-top-color: $green;;
                 z-index: 1001;
                 @include animation(spin 2s linear infinite);
-                @include transition(opacity 1s ease);
+                @include transition(opacity .5s ease);
             }
 
             .circle:before {
@@ -99,7 +78,7 @@
 
             .loading.complete .circle { opacity: 0; }
 
-            .loading.complete { @include transform(translateX(100%)); }
+            .loading.complete { opacity: 0; }
 
     }
 

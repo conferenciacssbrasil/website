@@ -17,18 +17,23 @@
             cursorText 1s 2s 3 both);
         }
 
-        .year { @include animation(fadeIn 1s 6.25s both); }
+        .year { @include animation(fadeIn .5s 5.5s both); }
 
     /*  Info
         ========================================================================== */
-        .lead span { @include animation(fadeIn 1s 5.75s ease both); }
-        .lead span + span { @include animation(fadeIn 1s 7.5s ease both); }
+        .lead span:nth-child(1) { @include animation(fadeIn 1s 5.25s ease both); }
+        .lead span:nth-child(2) { @include animation(fadeIn 1s 6.25s ease both); }
+        .lead span:nth-child(3) { @include animation(fadeIn 1s 7.25s ease both); }
         .arrow { @include animation(fadeInDown 0.75s 8.5s ease both); }
         .btn-subscription { @include animation(bounceIn 0.75s 9.25s ease both); }
-        .small { @include animation(fadeIn 0.75s 10s ease both); }
-        .share li:nth-child(1) { @include animation(fadeIn 0.5s 10.75s ease both); }
-        .share li:nth-child(2) { @include animation(fadeIn 0.5s 11s ease both); }
-        .share li:nth-child(3) { @include animation(fadeIn 0.5s 11.25s ease both); }
+        .small { @include animation(fadeInDown 0.5s 9.75s ease both); }
+        .share li:nth-child(1) { @include animation(fadeIn 0.25s 11.5s ease both); }
+        .share li:nth-child(2) { @include animation(fadeIn 0.25s 11.75s ease both); }
+        .share li:nth-child(3) { @include animation(fadeIn 0.25s 12s ease both); }
+
+    /*  Footer
+        ========================================================================== */
+        .holding { @include animation(fadeIn 0.5s 12.25s ease both); }
 
         .preload .logo,
         .preload .square .letter,
@@ -38,7 +43,8 @@
         .preload .btn,
         .preload .arrow,
         .preload .small,
-        .preload .property {
+        .preload .property,
+        .preload .footer {
             -webkit-animation-play-state: paused;
                -moz-animation-play-state: paused;
                  -o-animation-play-state: paused;

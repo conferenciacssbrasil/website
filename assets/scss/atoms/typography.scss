@@ -48,6 +48,11 @@ Typography
     h5,
     h6 {}
 
+    .title-holding {
+        line-height: 1.25;
+        font-size: 28px;
+    }
+
 /*  Texts
     ========================================================================== */
     p {
@@ -58,21 +63,19 @@ Typography
         text-align: center;
     }
 
-    .small {
-        font-size: 18px;
-    }
+    .small { font-size: 18px; }
 
     
 /*  Links
     ========================================================================== */
     a {
-        color: blue;
+        color: $green;
         text-decoration: none;
     }
 
     a:hover { text-decoration: underline; }
 
-    }
+}
 
 
 /*

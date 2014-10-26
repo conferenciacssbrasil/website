@@ -64,21 +64,27 @@
 
     <!-- Main -->
     <main class="main" id="#conteudo" role="main">
-
         <p class="lead">
-            <span class="block">1ª Conferência de CSS do Brasil acontecerá em <span itemprop="location">São Paulo</span>entre Abril/Maio 2015.</span>
-            <span class="block">E ai vai ficar de fora desse mega evento?</span>
+            <span class="block">Primeira Conferência de CSS do Brasil.</span>
+            <span class="block"> <span itemprop="location">São Paulo</span>| entre Abril e Maio</span>
+            <span class="block">Vai ficar de fora?</span>
         </p>
 
         <span class="arrow" aria-hidden="true"></span>
 
         <a class="btn btn-subscription" href="http://www.eventick.com.br/css-conf-brasil" target="_blank">Inscreva-se já</a>
 
-        <p class="small" itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">Primeiro lote promocional <span itemprop="lowPrice">R$:50,00</span></p>
+        <p class="small" itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">Lote promocional de lançamento: <span itemprop="lowPrice">R$ 99,00</span></p>
+    
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer container" role="contentinfo">
+
+        <!-- Share icons -->
         <ul class="share">
             <li>
-                <a href="https://www.facebook.com/pages/CSS-CONF-Brasil/726531330748789?fref=ts" target="_blank"  title="Curta a fanpage oficial do Evento">
+                <a href="https://www.facebook.com/pages/CSS-CONF-Brasil/726531330748789?fref=ts" target="_blank" title="Curta a fanpage oficial do Evento">
                     <span class="sr-only">Facebook</span>
                     <span class="icon-facebook" aria-hidden="true"></span>
                 </a>
@@ -96,7 +102,26 @@
                 </a>
             </li>
         </ul>
-    </main>
+
+        <!-- Holding -->
+        <section class="holding">
+            <h2 class="title text-center title-holding">Realização</h2>
+            <ul class="list-holding">
+                <li>
+                    <a target="_blank" href="http://www.frontinsampa.com.br" class="hover">
+                        <img src="build/img/logo-front-in-sampa.png" alt="Logo do evento Front in Sampa">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.meetup.com/CSS-SP/" class="hover">
+                        <img src="build/img/logo-meetup-css-sp.png" alt="Logo do meetup CSS SP">
+                    </a>
+                </li>
+            </ul>
+
+            <p class="website"><a href="mailto:cssconfbrasil@gmail.com" class="block">cssconfbrasil@gmail.com</a></p>
+        </section>
+    </footer>
 
     <script>
     var config = {
@@ -108,7 +133,7 @@
         config.loading.classList.add('complete');
         setTimeout(function(){
             config.hold[0].classList.remove('preload');
-        }, 1250);
+        }, 1000); 
     });
     </script>
 </body>
