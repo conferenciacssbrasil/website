@@ -50,3 +50,19 @@
                  -o-animation-play-state: paused;
                     animation-play-state: paused;
         }
+
+        .static .logo,
+        .static .square .letter,
+        .static .lead span,
+        .static .square,
+        .static .share,
+        .static .btn,
+        .static .arrow,
+        .static .small,
+        .static .property,
+        .static .footer,
+        .static .year,
+        .static .share li,
+        .static .holding { @include animation(none);  }
+
+        .static .property { border: none; }

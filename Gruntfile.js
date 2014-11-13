@@ -20,8 +20,7 @@ module.exports = function( grunt ) {
             dev: {
                 options: {
                     style: 'compressed',
-                    noCache: true,
-                    compass: true
+                    noCache: true
                 },
                 files: {
                     '<%= config.build %>css/main.min.css':
