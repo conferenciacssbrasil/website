@@ -78,7 +78,10 @@
 
             .loading.complete .circle { opacity: 0; }
 
-            .loading.complete { opacity: 0; }
+            .loading.complete {
+                opacity: 0;
+                z-index: 1;
+            }
 
     }
 
