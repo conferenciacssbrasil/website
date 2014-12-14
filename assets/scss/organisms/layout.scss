@@ -12,6 +12,49 @@
             background-size: 64px 128px;
         }
 
+        .section {
+            // @include box-shadow(0 0 20px 0 rgba(0,0,0,.5) inset);
+        }
+
+        /*  Line
+            ========================================================================== */
+            .line {
+                border-top: solid 5px $yellow;
+                position: relative;
+            }
+
+            .line-bottom {
+                border-top: none;
+                border-bottom: solid 5px $yellow;
+            }
+
+            .line:after,
+            .line:before {
+                top: -5px;
+                z-index: 1;
+                position: absolute;
+                content: "";
+                width: 34%;
+                height: 5px;
+             }
+
+             .line-bottom:after,
+             .line-bottom:before {
+                top: auto;
+                bottom: -5px;
+             }
+
+             .line:before {
+                left: 0;
+                background-color: $green;
+             }
+
+             .line:after {
+                right: 0;
+                background-color: $blue;
+             }
+
+
         /*  Arrow
             ========================================================================== */
             .arrow {
@@ -21,7 +64,6 @@
                 display: block;
                 margin: 10px auto 20px;
             }
-
 
         /*  Loading
             ========================================================================== */
@@ -81,20 +123,60 @@
             .loading.complete {
                 opacity: 0;
                 z-index: -999999999;
-            }
-        
+            }        
 
         /*  Date
             ========================================================================== */
             .hold-date {
                 background-color: $green;
-                @include box-shadow(0 0 20px 0 rgba(0,0,0,.5) inset);
+                // @include box-shadow(0 0 20px 0 rgba(0,0,0,.5) inset);
             }
+
+            .hold-date .title { margin-bottom: 0; }
 
             .title-date {
                 font-size: 48px;
                 color: #fff;
             }
+
+        /*  Local
+            ========================================================================== */
+           .hold-local {
+                background: transparent url(../img/imagem-local.jpg) center center no-repeat;
+                @include background-size(cover);
+            }
+
+            .hold-local .title {
+                color: #fff;
+                padding: 125px 0;
+            }
+
+        /*  Speakers
+            ========================================================================== */
+            .hold-speakers { background-color: $yellow; }
+
+            .hold-speakers .title,
+            .hold-speakers p { color: darken($yellow, 42%); }
+
+            .hold-speakers hr { 
+                border: solid 1px darken($yellow, 20%);
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+            }
+
+        /*  Partners
+            ========================================================================== */
+            .hold-partners { background-color: $blue; }
+
+            .hold-partners .title,
+            .hold-partners p {
+                color: #fff;
+            }
+
+        /*  Subscribe
+            ========================================================================== */
+            .hold-subscribe { background-color: #fff; }
 
     }
 
@@ -104,5 +186,6 @@
      */
 
     @media only screen and (min-width: $breakpoint) {
+
 
     }

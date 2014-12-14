@@ -63,24 +63,40 @@ Typography
     h5,
     h6 {}
 
-    .title-holding {
-        line-height: 1.25;
-        font-size: 28px;
-        font-family: 'gabriolaregular';
-    }
-
     .title {
-        margin: 0;
+        margin: 0 0 20px;
         font-size: 36px;
-        text-shadow: 1px 1px 0 rgba(0,0,0,.5);
     }
 
-    .title-question {
+    .title small {
+        font-size: 50%;
+        padding-top: 5px;
+    }
+
+    .title-small { font-size: 24px; }
+
+    .title-inner-shadow {
         text-transform: uppercase;
         font-size: 24px;
         font-weight: 900;
         color: rgba(0,0,0,0.3);
         text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    }
+
+    .title-shadow { text-shadow: 1px 1px 0 rgba(0,0,0,.5); }
+
+    .title-section {
+        text-transform: uppercase;
+    }
+
+    .title-section:before,
+    .title-section:after {
+        content: "\25A0";
+        color: inherit;
+        padding: 0 3px;
+        position: relative;
+        top: -7px;
+        font-size: 50%;
     }
 
 /*  Texts

@@ -25,11 +25,11 @@
         }
 
         .section {
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
 
-        .hold-info + .hold-info { margin-top: 20px; }
+        .intro { margin-bottom: 25px; }
     }
 
     /*
@@ -43,12 +43,5 @@
             margin-right: auto;
             max-width: $max-width;
         }
-
-        .hold-info {
-            float: left;
-            width: 50%;
-        }
-
-        .hold-info + .hold-info { margin-top: 0; }
 
     }

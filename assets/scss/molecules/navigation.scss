@@ -91,6 +91,12 @@
                 text-align: center;
             }
 
+            .hashtag {
+                font-family: 'gabriolaregular';
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+
             /*  Social networks
                 ========================================================================== */
                 .share {
@@ -112,6 +118,7 @@
                         margin: 0;
                         position: relative;
                         @include transform(rotate(45deg));
+                        @include transition(background .25s ease);
 
                         &:hover {
                             text-decoration: none;
@@ -141,11 +148,11 @@
                     li:nth-child(2) {
                         a {
                             @include transform(rotate(45deg) translate(30%, 30%));
-                            background-color: #050707;
+                            background-color: #262e2e;
 
                             z-index: 5;
                             &:hover {
-                                background-color: darken(#050707, 10%);
+                                background-color: darken(#262e2e, 10%);
                             }
                         }
                     }
@@ -166,7 +173,7 @@
             /*  List holding
                 ========================================================================== */
                 .list-holding {
-                    margin: 15px 0;
+                    margin: 10px 0 15px;
                     padding: 0;
                     list-style-type: none;
                 }

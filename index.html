@@ -37,7 +37,7 @@
     ga('create','UA-56024822-1');ga('send','pageview');
     </script>
 </head>
-<body class="preload">
+<body class="preload line">
     <div id="loading" class="loading">
         <div class="spinner">
             <div class="circle"></div>
@@ -67,38 +67,81 @@
 
     <!-- Main -->
     <main class="main" id="#conteudo" role="main">
-        <p class="lead">
-            <span class="block">Primeira Conferência de CSS do Brasil.</span>
-            <span class="block">Vai ficar de fora?</span>
-        </p>
-        <div class="container section hold-date">
+        
+        <div class="row intro">
+            <p class="lead">
+                <span class="block">Primeira Conferência de CSS do Brasil.</span>
+                <span class="block">Vai ficar de fora?</span>
+            </p>
+            <span class="arrow" aria-hidden="true"></span>
+            <a class="btn btn-subscription" href="http://www.eventick.com.br/css-conf-brasil" target="_blank">Inscreva-se já</a>
+        </div>
+
+        <!-- Date -->
+        <section class="container section hold-date">
             <div class="row">
                 <div class="hold-info">
-                    <h2 class="title title-shadow title-question">Quando?</h2>
-                    <h3 class="title title-date">XX de maio</h3>
-                </div>
-                <div class="hold-info">
-                    <h2 class="title title-shadow title-question">Onde?</h2>
-                    <h3 class="title title-date">Espaço CSS</h3>
-                </div>    
+                    <h2 class="title title-inner-shadow">Marque na agenda</h2>
+                    <h3 class="title title-shadow title-date">31 de maio
+                    <small class="block">A partir das 8:00</small></h3>
+                </div>   
             </div>
-        </div>
-        <!-- 
-        <span class="arrow" aria-hidden="true"></span>
+        </section>
 
-        <a class="btn btn-subscription" href="http://www.eventick.com.br/css-conf-brasil" target="_blank">Inscreva-se já</a>
+        <!-- Speakers -->
+        <section class="container section hold-speakers">
+            <div class="row">
+                <h2 class="title title-section">Palestrantes</h2>
+                <p>Já temos palestrantes confirmados! <strong>\o/</strong> Em breve divulgaremos!</p>
+                <hr>
+                <h3 class="title title-section title-small">Call4paperz</h3>
+                <p>Tem um assunto legal sobre CSS pra mostrar pro mundo?
+                    <a class="hover-3d" href="#"><span data-title="Envie sua idéia pra gente!">Envie sua idéia pra gente!</span></a>
+                </p>
+            </div>
+        </section>
 
-        <p class="small" itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">Lote promocional de lançamento: <span itemprop="lowPrice">R$ 99,00</span></p> -->
+        <!-- Partners -->
+        <section class="container section hold-partners">
+            <div class="row">
+                <h2 class="title title-section">Patrocinadores</h2>
+                <p>Tem interesse em patrocinar o <strong>CSS Conf Brasil</strong>? 
+                    <span class="block">
+                        <a class="hover-3d" href="mailto:falecom@cssconfbrasil.com.br"><span data-title="Envie um e-mail pra nós!">Envie um e-mail pra nós!</span></a>
+                    </span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Subscription -->
+        <section class="container section hold-subscribe">
+            <div class="row">
+                <h2 class="title title-section">Junte-se a nós!</h2>
+                <a class="btn btn-subscription" href="http://www.eventick.com.br/css-conf-brasil" target="_blank">Inscreva-se já</a>
+                <p class="small" itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">Lote promocional de lançamento: <span itemprop="lowPrice">R$ 129,00</span></p>
+            </div>
+        </section>
+
+        <!-- Local --> 
+        <section class="container section hold-local">
+            <div class="row">
+                <h2 class="title title-shadow">Hotel Intercontinental
+                    <small class="block address">Alameda Santos, 1123 - Jardim Paulista - São Paulo</small>
+                </h2>
+                <a class="hover-3d" href="#"><span data-title="Ver no Google Maps">Ver no Google Maps</span></a>
+            </div>
+        </section>
+
 
     </main>
 
     <!-- Footer -->
-    <footer class="footer container" role="contentinfo">
-
+    <footer class="footer container line line-bottom" role="contentinfo">
+        <div class="hashtag">#cssconfbrasil</div>
         <!-- Share icons -->
         <ul class="share">
             <li>
-                <a href="https://www.facebook.com/cssconferencebrasil" target="_blank" title="Curta a fanpage oficial do Evento">
+                <a href="https:// www.facebook.com/cssconferencebrasil" target="_blank" title="Curta a fanpage oficial do Evento">
                     <span class="sr-only">Facebook</span>
                     <span class="icon-facebook" aria-hidden="true"></span>
                 </a>
@@ -119,7 +162,7 @@
 
         <!-- Holding -->
         <section class="holding">
-            <h2 class="title text-center title-holding">Realização</h2>
+            <h2 class="title title-small title-section">Realização</h2>
             <ul class="list-holding">
                 <li>
                     <a class="hover" target="_blank" href="http://www.frontinsampa.com.br" title="Acessar site do Front in Sampa">
@@ -133,7 +176,9 @@
                 </li>
             </ul>
 
-            <p class="website"><a href="mailto:falecom@cssconfbrasil.com.br" class="block">falecom@cssconfbrasil.com.br</a></p>
+            <p class="website">
+                <a href="mailto:falecom@cssconfbrasil.com.br" class="hover-3d"><span data-title="falecom@cssconfbrasil.com.br">falecom@cssconfbrasil.com.br</span></a>
+            </p>
         </section>
     </footer>
 
