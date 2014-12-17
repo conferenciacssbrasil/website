@@ -84,10 +84,7 @@ Typography
     }
 
     .title-shadow { text-shadow: 1px 1px 0 rgba(0,0,0,.5); }
-
-    .title-section {
-        text-transform: uppercase;
-    }
+    .title-section { text-transform: uppercase; }
 
     .title-section:before,
     .title-section:after {
@@ -116,7 +113,7 @@ Typography
         font-family: 'gabriolaregular';
     }
 
-    
+
 /*  Links
     ========================================================================== */
     a {

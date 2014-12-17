@@ -123,33 +123,56 @@
             .loading.complete {
                 opacity: 0;
                 z-index: -999999999;
-            }        
+            }
 
         /*  Date
             ========================================================================== */
-            .hold-date {
-                background-color: $green;
-                // @include box-shadow(0 0 20px 0 rgba(0,0,0,.5) inset);
-            }
+            .hold-date { background-color: $green; }
 
             .hold-date .title { margin-bottom: 0; }
 
-            .title-date {
-                font-size: 48px;
-                color: #fff;
-            }
+            .title-date { font-size: 48px; }
+
+            .hold-date .title,
+            .hold-date p { color: #fff; }
+            .hold-date p:first-of-type { margin-top: 25px; }
+            .hold-date p { text-shadow: 1px 1px 0 rgba(0,0,0,.3); }
 
         /*  Local
             ========================================================================== */
            .hold-local {
-                background: transparent url(../img/imagem-local.jpg) center center no-repeat;
+                position: relative;
+                background: transparent url(../img/maksoud-plaza.jpg) center center no-repeat;
                 @include background-size(cover);
+            }
+
+            .hold-local:before {
+                z-index: 0;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                /**/
+                background:    -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+                background:      -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+                background:     -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+                background:         radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+            }
+
+            .hold-local .row {
+                position: relative;
+                z-index: 1;
             }
 
             .hold-local .title {
                 color: #fff;
                 padding: 125px 0;
             }
+
+            .hold-local a { color: $yellow; }
 
         /*  Speakers
             ========================================================================== */
@@ -158,7 +181,7 @@
             .hold-speakers .title,
             .hold-speakers p { color: darken($yellow, 42%); }
 
-            .hold-speakers hr { 
+            .hold-speakers hr {
                 border: solid 1px darken($yellow, 20%);
                 border-left: none;
                 border-right: none;
@@ -173,6 +196,8 @@
             .hold-partners p {
                 color: #fff;
             }
+
+            .hold-partners a { color: $yellow; }
 
         /*  Subscribe
             ========================================================================== */

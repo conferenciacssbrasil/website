@@ -52,36 +52,41 @@
         vertical-align: top;
         @include perspective(600px);
         @include perspective-origin(50%, 50%);
-
-        &:hover { text-decoration: none; }
-        &:hover span {
-            background: $green;
-            @include transform(translate3d( 0px, 0px, -30px ) rotateX( 90deg ));
-            text-decoration: none;
-        }
-
-        span {
-            display: block;
-            position: relative;
-            padding: 2px 5px;
-            @include transition(all .5s ease);
-            @include origin(50%, 0%);
-            @include transform-style(preserve-3d);
-
-            &:after {
-                content: attr(data-title);
-                display: block;
-                position: absolute;
-                left: 0;
-                top: 0;
-                padding: 2px 5px;
-                color: #fff;
-                background: $green;
-                @include origin(50%, 0%);
-                @include transform(translate3d( 0px, 105%, 0px ) rotateX( -90deg ));
-            }
-        }
     }
+
+    .hover-3d:hover { text-decoration: none; }
+    .hover-3d:hover span {
+        background-color: $green;
+        @include transform(translate3d( 0px, 0px, -30px ) rotateX( 90deg ));
+        text-decoration: none;
+    }
+
+    .hover-3d span {
+        display: block;
+        position: relative;
+        padding: 2px 5px;
+        @include transition(all .5s ease);
+        @include origin(50%, 0%);
+        @include transform-style(preserve-3d);
+    }
+
+    .hover-3d span:after {
+        content: attr(data-title);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 2px 5px;
+        color: #fff;
+        background-color: $green;
+        @include origin(50%, 0%);
+        @include transform(translate3d( 0px, 105%, 0px ) rotateX( -90deg ));
+    }
+
+    .hover-3d-yellow:hover span,
+    .hover-3d-yellow span:after { background-color: $yellow; }
+
+    .hover-3d-yellow span:after { color: $color-default; }
 
     /* Esconde elemento para todos usuários exceto leitores de tela */
     .sr-only {
