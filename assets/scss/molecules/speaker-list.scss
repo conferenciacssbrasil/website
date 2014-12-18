@@ -1,0 +1,46 @@
+/*  ==========================================================================
+    Speakers List
+    ========================================================================== */
+
+    @media only screen {
+
+      .speaker-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+
+      .speaker-item {
+
+      }
+
+    }
+
+    @media only screen and (min-width: $breakpoint) {
+
+      .speaker-item { 
+        display: inline-block;
+        margin-bottom: 20px;
+        padding-right: 20px;
+        width: 48%;
+        vertical-align: top;
+
+        p {
+          text-align: left;
+        }
+
+        h4 {
+          color: $green;
+          font-size: 20px;
+          margin: 10px 0;
+        }
+      }
+
+      .speaker-link {
+        float: left;
+        margin-right: 10px;
+        width: 40%;
+      }
+
+    }
