@@ -8,16 +8,24 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        text-align: left;
       }
 
-      .speaker-item {
+      .speaker-item { 
 
+        h4 {
+          color: $green;
+          font-size: 20px;
+          margin: 10px 0;
+        }
       }
 
     }
 
     @media only screen and (min-width: $breakpoint) {
+
+      .speaker-list{
+        text-align: left;
+      }
 
       .speaker-item { 
         display: inline-block;
@@ -25,15 +33,9 @@
         padding-right: 20px;
         width: 48%;
         vertical-align: top;
-
+        
         p {
           text-align: left;
-        }
-
-        h4 {
-          color: $green;
-          font-size: 20px;
-          margin: 10px 0;
         }
       }
 
