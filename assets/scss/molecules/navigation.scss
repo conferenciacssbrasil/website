@@ -58,9 +58,9 @@
                     z-index: 1;
                 }
 
-                /* About conf */
+                /* About  */
                 .property {
-                    font-size: 72px;
+                    font-size: 46px;
                     text-align: center;
                     font-weight: normal;
                     line-height: 1.7;
@@ -196,9 +196,9 @@
 
             /*  Logo
                 ========================================================================== */
-                .property { line-height: 1; }
-
-        /*  Footer
-            ========================================================================== */
+                .property {
+                    line-height: 1;
+                    font-size: 72px;
+                }
 
    }
