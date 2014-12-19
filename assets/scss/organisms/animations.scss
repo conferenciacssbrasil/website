@@ -23,18 +23,20 @@
         ========================================================================== */
         .lead span:nth-child(1) { @include animation(fadeIn 1s 5.25s ease both); }
         .lead span:nth-child(2) { @include animation(fadeIn 1s 6.25s ease both); }
-        .lead span:nth-child(3) { @include animation(fadeIn 1s 7.25s ease both); }
-        .arrow { @include animation(fadeInDown 0.75s 8.5s ease both); }
-        .btn-subscription { @include animation(bounceIn 0.75s 9.25s ease both); }
-        .small { @include animation(fadeInDown 0.5s 9.75s ease both); }
-        .share li:nth-child(1) { @include animation(fadeIn 0.25s 11.5s ease both); }
-        .share li:nth-child(2) { @include animation(fadeIn 0.25s 11.75s ease both); }
-        .share li:nth-child(3) { @include animation(fadeIn 0.25s 12s ease both); }
+        .arrow { @include animation(fadeInDown 0.75s 7s ease both); }
+        .btn-subscription { @include animation(bounceIn 0.75s 7.75s ease both); }
+
+    /*  Sections
+        ========================================================================== */
+        .section { @include animation(fadeIn 1s 9.25s ease both); }
+        
 
     /*  Footer
         ========================================================================== */
-        .holding { @include animation(fadeIn 0.5s 12.25s ease both); }
+        .holding { @include animation(fadeIn 0.5s 10s ease both); }
 
+    /*  Preload
+        ========================================================================== */
         .preload .logo,
         .preload .square .letter,
         .preload .lead span,
@@ -44,7 +46,8 @@
         .preload .arrow,
         .preload .small,
         .preload .property,
-        .preload .footer {
+        .preload .footer,
+        .preload .section {
             -webkit-animation-play-state: paused;
                -moz-animation-play-state: paused;
                  -o-animation-play-state: paused;
@@ -63,6 +66,7 @@
         .static .footer,
         .static .year,
         .static .share li,
-        .static .holding { @include animation(none);  }
+        .static .holding,
+        .static .section { @include animation(none);  }
 
         .static .property { border: none; }

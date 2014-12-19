@@ -27,15 +27,30 @@ Typography
         url('../fonts/calgary/calgary_script-webfont.svg#calgary_script_otregular') format('svg');
         font-weight: normal;
         font-style: normal;
-
     }
+
+    @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+    }
+
+    @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v11/G2uphNnNqGFMHLRsO_72ngLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+    }
+
+
 
 @media only screen {
 
     body {
         -webkit-text-size-adjust: none;
         -ms-text-size-adjust:none;
-        font-family: 'gabriolaregular';
+        font-family: 'Lato';
         font-size: 16px;
     }
 
@@ -48,9 +63,37 @@ Typography
     h5,
     h6 {}
 
-    .title-holding {
-        line-height: 1.25;
-        font-size: 28px;
+    .title {
+        margin: 0 0 20px;
+        font-size: 36px;
+    }
+
+    .title small {
+        font-size: 50%;
+        padding-top: 5px;
+    }
+
+    .title-small { font-size: 24px; }
+
+    .title-inner-shadow {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 900;
+        color: rgba(0,0,0,0.3);
+        text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    }
+
+    .title-shadow { text-shadow: 1px 1px 0 rgba(0,0,0,.5); }
+    .title-section { text-transform: uppercase; }
+
+    .title-section:before,
+    .title-section:after {
+        content: "\25A0";
+        color: inherit;
+        padding: 0 3px;
+        position: relative;
+        top: -7px;
+        font-size: 50%;
     }
 
 /*  Texts
@@ -65,7 +108,13 @@ Typography
 
     .small { font-size: 18px; }
 
-    
+    .lead {
+        font-size: 28px;
+        font-family: 'gabriolaregular';
+    }
+    .text-yellow { color: $yellow; }
+
+
 /*  Links
     ========================================================================== */
     a {

@@ -91,13 +91,6 @@
 
         } $browser: null;
 
-        @mixin perspective($value) {
-            -webkit-perspective: $value;
-               -moz-perspective: $value;
-                -ms-perspective: $value;
-                 -o-perspective: $value;
-                    perspective: $value;
-        }
 
     /*  Transform
         ========================================================================== */
@@ -115,6 +108,30 @@
                  -o-transform-origin: $valueX $valueY;
                 -ms-transform-origin: $valueX $valueY;
                     transform-origin: $valueX $valueY;
+        }
+
+        @mixin perspective($value) {
+            -webkit-perspective: $value;
+               -moz-perspective: $value;
+                -ms-perspective: $value;
+                 -o-perspective: $value;
+                    perspective: $value;
+        }
+
+        @mixin perspective-origin($valueX, $valueY) {
+            -webkit-perspective-origin: $valueX, $valueY;
+               -moz-perspective-origin: $valueX, $valueY;
+                 -o-perspective-origin: $valueX, $valueY;
+                -ms-perspective-origin: $valueX, $valueY;
+                    perspective-origin: $valueX, $valueY;
+        }
+
+        @mixin transform-style($value) {
+            -webkit-transform-style: $value;
+               -moz-transform-style: $value;
+                 -o-transform-style: $value;
+                -ms-transform-style: $value;
+                    transform-style: $value;
         }
 
     /*  Background-size

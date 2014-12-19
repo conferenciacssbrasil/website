@@ -58,9 +58,9 @@
                     z-index: 1;
                 }
 
-                /* About conf */
+                /* About  */
                 .property {
-                    font-size: 72px;
+                    font-size: 46px;
                     text-align: center;
                     font-weight: normal;
                     line-height: 1.7;
@@ -70,6 +70,7 @@
                     margin-left: auto;
                     margin-right: auto;
                     border-right: 5px solid $color-default;
+                    font-family: 'gabriolaregular';
                 }
 
                 .year {
@@ -79,6 +80,7 @@
                     // font-size: 60px;
                     // height: 45px;
                     font-weight: normal;
+                    font-family: 'gabriolaregular';
                 }
 
 
@@ -87,6 +89,12 @@
             .footer {
                 margin-top: 50px;
                 text-align: center;
+            }
+
+            .hashtag {
+                font-family: 'gabriolaregular';
+                font-size: 24px;
+                margin-bottom: 25px;
             }
 
             /*  Social networks
@@ -110,6 +118,7 @@
                         margin: 0;
                         position: relative;
                         @include transform(rotate(45deg));
+                        @include transition(background .25s ease);
 
                         &:hover {
                             text-decoration: none;
@@ -139,11 +148,11 @@
                     li:nth-child(2) {
                         a {
                             @include transform(rotate(45deg) translate(30%, 30%));
-                            background-color: #050707;
+                            background-color: #262e2e;
 
                             z-index: 5;
                             &:hover {
-                                background-color: darken(#050707, 10%);
+                                background-color: darken(#262e2e, 10%);
                             }
                         }
                     }
@@ -164,7 +173,7 @@
             /*  List holding
                 ========================================================================== */
                 .list-holding {
-                    margin: 15px 0;
+                    margin: 10px 0 15px;
                     padding: 0;
                     list-style-type: none;
                 }
@@ -187,9 +196,9 @@
 
             /*  Logo
                 ========================================================================== */
-                .property { line-height: 1; }
-
-        /*  Footer
-            ========================================================================== */
+                .property {
+                    line-height: 1;
+                    font-size: 72px;
+                }
 
    }
