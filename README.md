@@ -1,10 +1,10 @@
-![CSS Conf Brasil](logo-cssconf.png "CSS Conf Brasil")
+![css-brasil](https://cloud.githubusercontent.com/assets/1345662/5505846/c1f9cbc6-877b-11e4-9609-4008a15d7739.png)
 
-[Visit the website](http://www.cssconfbrasil.com.br)
+[Visit the website](http://www.conferenciacssbrasil.com.br)
 
 ## Contributing
 
-Please read this [Coding Style](https://github.com/LFeh/coding-style/) for [Issues](https://github.com/cssconfbrasil/website/issues), pull requests and coding standards.
+Please read this [Coding Style](https://github.com/LFeh/coding-style/) for [Issues](https://github.com/conferenciacssbrasil/website/issues), pull requests and coding standards.
 
 All changes must be made in `/assets` folder. The CSS should be modified using the **SASS** preprocessor.
 
@@ -26,4 +26,4 @@ Install all dependencies
 
 ## License
 
-MIT License © [CSS Conf Brasil](https://github.com/cssconfbrasil)
+MIT License © [CSS Conf Brasil](https://github.com/conferenciacssbrasil)
