@@ -240,12 +240,12 @@
     };
 
     document.addEventListener("DOMContentLoaded", function(event) {
-        config.loading.classList.add('complete');
-        if(localStorage.getItem('keepTheUser')) {
-            config.hold[0].classList.add('static');
-        } else {
-            localStorage.setItem('keepTheUser', true);
-        }
+        // config.loading.classList.add('complete');
+        // if(localStorage.getItem('keepTheUser')) {
+        //     config.hold[0].classList.add('static');
+        // } else {
+        //     localStorage.setItem('keepTheUser', true);
+        // }
         setTimeout(function(){
             config.hold[0].classList.remove('preload');
         }, 1000);
