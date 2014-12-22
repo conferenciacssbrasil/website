@@ -74,7 +74,6 @@
                 height: 100%;
                 position: fixed;
                 @include transition(all 1s);
-                @include animation(fadeOut 1s ease both);
             }
 
             .circle {
