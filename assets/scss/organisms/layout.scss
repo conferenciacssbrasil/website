@@ -167,12 +167,31 @@
                 z-index: 1;
             }
 
+            .local-box {
+                position: relative;
+                background-color: rgba(0,0,0,.65);
+                padding: 20px;
+                max-width: 500px;
+                height: 100%;
+                margin: 0 auto;
+            }
+
             .hold-local .title {
                 color: #fff;
-                padding: 125px 0;
+                margin-bottom: 35px;
             }
 
             .hold-local a { color: $yellow; }
+
+            .about-local {
+                border-top: solid 1px #fff;
+                color: #fff;
+                font-size: 14px;
+                max-width: 400px;
+                margin: 0 auto 35px;
+                line-height: 1.4;
+                padding-top: 35px;
+            }
 
         /*  Speakers
             ========================================================================== */
