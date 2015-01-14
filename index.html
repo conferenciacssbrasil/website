@@ -40,7 +40,7 @@
     ga('create','UA-56024822-1');ga('send','pageview');
     </script>
 </head>
-<body class="preload line">
+<body class="line preload">
     <div id="loading" class="loading">
         <div class="spinner">
             <div class="circle"></div>
@@ -50,25 +50,39 @@
     <a href="#conteudo" class="sr-only go-content" tabindex="1" accesskey="1">Ir para conteúdo</a>
 
     <!-- Header -->
-    <header class="header row" role="banner">
-        <h1 class="logo" role="logo">
-            <div class="hold-squares">
-                <div class="square">
-                    <span class="letter">C</span>
-                </div>
-                <div class="square">
-                    <span class="letter">S</span>
-                </div>
-                <div class="square">
-                    <span class="letter">S</span>
-                </div>
-            </div>
-            <div class="property block">{ conferencia: <span class="year">brasil</span>; }</div>
-        </h1>
+    <header class="header-fixed line"> 
+      <div class="header-inner">
+        <a class="header-btn btn btn-sm" href="http://www.eventick.com.br/conferenciacssbrasil" target="_blank">Inscreva-se já</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
+            <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#local">Local</a></li> 
+          </ul>
+        </nav>
+      </div> 
     </header>
 
     <!-- Main -->
-    <main class="main" id="#conteudo" role="main">
+    <main class="main" id="conteudo" role="main">
+
+        <!-- Main Header -->
+        <header class="section header row" role="banner">
+            <h1 class="logo" role="logo">
+                <div class="hold-squares">
+                    <div class="square">
+                        <span class="letter">C</span>
+                    </div>
+                    <div class="square">
+                        <span class="letter">S</span>
+                    </div>
+                    <div class="square">
+                        <span class="letter">S</span>
+                    </div>
+                </div>
+                <div class="property block">{ conferencia: <span class="year">brasil</span>; }</div>
+            </h1>
+        </header>
 
         <div class="row intro">
             <p class="lead">
@@ -80,7 +94,7 @@
         </div>
 
         <!-- Date -->
-        <section class="container section hold-date">
+        <section class="container section hold-date" id="data">
             <div class="row">
                 <div class="hold-info">
                     <h2 class="title title-inner-shadow">Marque na agenda</h2>
@@ -96,7 +110,7 @@
         </section>
 
         <!-- Speakers -->
-        <section class="container section hold-speakers">
+        <section class="container section hold-speakers" id="palestrantes">
             <div class="row">
                 <h2 class="title title-section">Palestrantes</h2>
                 <p>Alguns dos nomes já confirmados!</p>
@@ -173,7 +187,7 @@
         </section>
 
         <!-- Local -->
-        <section class="container section hold-local">
+        <section class="container section hold-local" id="local">
             <div class="row">
                 <div class="local-box">
                     <h2 class="title title-shadow">Hotel Maksoud Plaza
@@ -251,6 +265,60 @@
             config.hold[0].classList.remove('preload');
         }, 1000);
     });
+
+    (function() {
+      var speed = 500;
+      var moving_frequency = 15; 
+      var links = document.getElementsByClassName('nav-link');
+      var href;
+      for(var i=0; i<links.length; i++)
+      {   
+          href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
+          if(href !== null && href.length > 1 && href.substr(0, 1) == '#')
+          {
+              links[i].onclick = function()
+              {
+                  var element;
+                  var href = this.attributes.href.nodeValue.toString();
+                  if(element = document.getElementById(href.substr(1)))
+                  {
+                      var hop_count = speed/moving_frequency
+                      var getScrollTopDocumentAtBegin = getScrollTopDocument();
+                      var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
+
+                      for(var i = 1; i <= hop_count; i++)
+                      {
+                          (function()
+                          {
+                              var hop_top_position = gap*i;
+                              setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
+                          })();
+                      }
+                  }
+
+                  return false;
+              };
+          }
+      }
+
+      var getScrollTopElement =  function (e)
+      {
+          var top = 0;
+
+          while (e.offsetParent != undefined && e.offsetParent != null)
+          {
+              top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
+              e = e.offsetParent;
+          }
+
+          return top;
+      };
+
+      var getScrollTopDocument = function()
+      {
+          return document.documentElement.scrollTop + document.body.scrollTop;
+      };
+      })(); 
     </script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+/*  ==========================================================================
+    Header Fixed
+    ========================================================================== */
+
+    @media only screen {
+
+      .header-fixed { 
+        background:
+          linear-gradient(135deg, $gray-white 22px, #fafafa 22px, #fafafa 24px, transparent 24px, transparent 67px, #fafafa 67px, #fafafa 69px, transparent 69px),
+          linear-gradient(225deg, $gray-white 22px, #fafafa 22px, #fafafa 24px, transparent 24px, transparent 67px, #fafafa 67px, #fafafa 69px, transparent 69px)0 64px;
+        background: rgba(255,255,255, 0.8);
+        background-size: 64px 128px;
+        position: fixed;
+        left: 0; right: 0; top: 0;
+        text-align: center;
+        z-index: 10;
+      }  
+
+          .header-inner {
+            @include clearfix();
+            margin: 0 auto;
+            max-width: 1200px; 
+            padding: 10px;
+          }
+
+
+    /*  Nav
+        ========================================================================== */
+ 
+        .nav-list {
+            margin: 12px 0 0;
+            padding: 0;
+            list-style-type: none;
+        } 
+
+        .nav-item {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            font-size: 20px;
+        }
+    } 
+
+     @media only screen and (min-width: $breakpoint) { 
+
+      .header-fixed {
+        text-align: left;
+      }
+       
+       .header-btn {
+           margin: 0;
+           float: left;
+       }
+
+      /*  Nav
+          ========================================================================== */
+
+        .nav {
+          float: right;
+        }
+
+    }

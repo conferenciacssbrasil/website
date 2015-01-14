@@ -5,9 +5,13 @@
     @media only screen {
 
       .main {
-        text-align: center;
-        position: relative;
-        z-index: 2;
+          text-align: center;
+          position: relative;
+          z-index: 2;
+      }
+
+      .section {
+          padding-top: 80px;
       }
 
     }

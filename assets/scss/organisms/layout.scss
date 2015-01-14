@@ -1,17 +1,9 @@
 /*  ==========================================================================
     Layout
     ========================================================================== */
-
+ 
     @media only screen {
-
-        body {
-            background:
-              linear-gradient(135deg, $gray-white 22px, #fafafa 22px, #fafafa 24px, transparent 24px, transparent 67px, #fafafa 67px, #fafafa 69px, transparent 69px),
-              linear-gradient(225deg, $gray-white 22px, #fafafa 22px, #fafafa 24px, transparent 24px, transparent 67px, #fafafa 67px, #fafafa 69px, transparent 69px)0 64px;
-            background-color: $gray-white;
-            background-size: 64px 128px;
-        }
-
+ 
         .section {
             // @include box-shadow(0 0 20px 0 rgba(0,0,0,.5) inset);
         }
@@ -19,8 +11,7 @@
         /*  Line
             ========================================================================== */
             .line {
-                border-top: solid 5px $yellow;
-                position: relative;
+                border-top: solid 5px $yellow; 
             }
 
             .line-bottom {
