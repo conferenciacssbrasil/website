@@ -49,24 +49,25 @@
     <!-- Access Key -->
     <a href="#conteudo" class="sr-only go-content" tabindex="1" accesskey="1">Ir para conteúdo</a>
 
-    <!-- Header -->
-    <header class="header-fixed line"> 
-      <div class="header-inner">
-        <a class="header-btn btn btn-sm" href="http://www.eventick.com.br/conferenciacssbrasil" target="_blank">Inscreva-se já</a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
-            <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#local">Local</a></li> 
-          </ul>
-        </nav>
-      </div> 
+    <!-- Main header -->
+    <header class="header-fixed line">
+        <div class="header-inner">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#patrocinadores">Patrocinadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
+                </ul>
+            </nav>
+            <a class="header-btn btn btn-sm" href="http://www.eventick.com.br/conferenciacssbrasil" target="_blank">Inscreva-se já</a>
+        </div>
     </header>
 
     <!-- Main -->
     <main class="main" id="conteudo" role="main">
 
-        <!-- Main Header -->
+        <!-- Header -->
         <header class="section header row" role="banner">
             <h1 class="logo" role="logo">
                 <div class="hold-squares">
@@ -166,7 +167,7 @@
         </section>
 
         <!-- Partners -->
-        <section class="container section hold-partners">
+        <section class="container section hold-partners" id="patrocinadores">
             <div class="row">
                 <h2 class="title title-section">Patrocinadores</h2>
                 <p>Apoie a Conferência CSS Brasil e valorize sua marca!
@@ -268,28 +269,22 @@
 
     (function() {
       var speed = 500;
-      var moving_frequency = 15; 
+      var moving_frequency = 15;
       var links = document.getElementsByClassName('nav-link');
       var href;
-      for(var i=0; i<links.length; i++)
-      {   
+      for(var i=0; i<links.length; i++) {
           href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
-          if(href !== null && href.length > 1 && href.substr(0, 1) == '#')
-          {
-              links[i].onclick = function()
-              {
+          if(href !== null && href.length > 1 && href.substr(0, 1) == '#') {
+              links[i].onclick = function() {
                   var element;
                   var href = this.attributes.href.nodeValue.toString();
-                  if(element = document.getElementById(href.substr(1)))
-                  {
+                  if(element = document.getElementById(href.substr(1))) {
                       var hop_count = speed/moving_frequency
                       var getScrollTopDocumentAtBegin = getScrollTopDocument();
                       var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
 
-                      for(var i = 1; i <= hop_count; i++)
-                      {
-                          (function()
-                          {
+                      for(var i = 1; i <= hop_count; i++) {
+                          (function() {
                               var hop_top_position = gap*i;
                               setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
                           })();
@@ -301,12 +296,10 @@
           }
       }
 
-      var getScrollTopElement =  function (e)
-      {
+      var getScrollTopElement =  function (e) {
           var top = 0;
 
-          while (e.offsetParent != undefined && e.offsetParent != null)
-          {
+          while (e.offsetParent != undefined && e.offsetParent != null) {
               top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
               e = e.offsetParent;
           }
@@ -314,11 +307,10 @@
           return top;
       };
 
-      var getScrollTopDocument = function()
-      {
+      var getScrollTopDocument = function() {
           return document.documentElement.scrollTop + document.body.scrollTop;
       };
-      })(); 
+      })();
     </script>
 </body>
 </html>

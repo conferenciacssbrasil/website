@@ -4,61 +4,55 @@
 
     @media only screen {
 
-      .header-fixed { 
-        background:
-          linear-gradient(135deg, $gray-white 22px, #fafafa 22px, #fafafa 24px, transparent 24px, transparent 67px, #fafafa 67px, #fafafa 69px, transparent 69px),
-          linear-gradient(225deg, $gray-white 22px, #fafafa 22px, #fafafa 24px, transparent 24px, transparent 67px, #fafafa 67px, #fafafa 69px, transparent 69px)0 64px;
-        background: rgba(255,255,255, 0.8);
-        background-size: 64px 128px;
-        position: fixed;
-        left: 0; right: 0; top: 0;
-        text-align: center;
-        z-index: 10;
-      }  
+        .header-fixed {
+            background: #fff;
+            background-color: rgba(255,255,255,.9);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            text-align: center;
+            z-index: 10;
+            @include box-shadow(0px 0px 5px 0 rgba(0,0,0,.35));
+        }
 
-          .header-inner {
+        .header-inner {
             @include clearfix();
             margin: 0 auto;
-            max-width: 1200px; 
+            max-width: 1200px;
             padding: 10px;
-          }
+        }
 
 
     /*  Nav
         ========================================================================== */
- 
+
         .nav-list {
-            margin: 12px 0 0;
+            margin: 0 0 15px 0;
             padding: 0;
             list-style-type: none;
-        } 
+        }
 
         .nav-item {
             display: inline-block;
             margin: 0 10px;
         }
 
-        .nav-link {
-            font-size: 20px;
-        }
-    } 
+        .nav-link { font-size: 14px; }
+    }
 
-     @media only screen and (min-width: $breakpoint) { 
-
-      .header-fixed {
-        text-align: left;
-      }
-       
-       .header-btn {
-           margin: 0;
-           float: left;
-       }
-
-      /*  Nav
-          ========================================================================== */
+     @media only screen and (min-width: $breakpoint) {
 
         .nav {
-          float: right;
+            float: left;
+            padding-top: 10px;
+        }
+
+        .nav-link { font-size: 18px; }
+
+        .header-btn {
+            margin: 0;
+            float: right;
         }
 
     }
