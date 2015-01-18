@@ -8,22 +8,26 @@ Please read this [Coding Style](https://github.com/LFeh/coding-style/) for [Issu
 
 All changes must be made in `/assets` folder. The CSS should be modified using the **SASS** preprocessor.
 
-For facilitate the contribution of any people in projects, all commit messages, pull request title or issues discussion must be in **English**.
+For facilitate the contribution of any people in projects, all commit messages, pull request titles or issues discussions must be in **English**.
 
-Before commit adjusts in project, check if exists an open issue and make references for this issue using '#' in your commit message.
+Before commit adjustments in project, check if exists an open issue and make references for this issue using '#' in your commit message.
 
 ### Getting Started
 
 Some steps:
 
-Install all dependencies
+Install all dependencies:
 
-`npm install`
+`npm install` 
 
-`Watch` task and enjoy
+Start the `watch` task and enjoy:
 
 `grunt live`
 
+There is the simple *css* task if you prefer:
+
+`grunt css`
+
 ## License
 
-MIT License © [CSS Conf Brasil](https://github.com/conferenciacssbrasil)
+MIT License © [Conferência CSS Brasil](https://github.com/conferenciacssbrasil)
