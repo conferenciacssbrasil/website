@@ -17,13 +17,13 @@
 
         .speaker-thumb {
             max-width: 180px;
-            float: left;
+            float: none;
             margin-right: 10px;
         }
 
         .speaker-item p,
         .speaker-item .title,
-        .speaker-link { text-align: left; }
+        .speaker-link { text-align: center; }
 
         .speaker-item p { margin: 0; }
         .speaker-item p,
@@ -51,7 +51,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            text-align: left;
+            text-align: center;
         }
 
         .speaker-thumb:before,
@@ -102,11 +102,18 @@
 
     @media only screen and (min-width: $breakpoint) {
 
+        .speaker-thumb { float: left; }
+
         .speaker-list { overflow: hidden; }
 
         .speaker-item {
             padding: 10px;
         }
+
+        .speaker-item p,
+        .speaker-item .title,
+        .speaker-link,
+        .speaker-social { text-align: left; }
 
         .speaker-thumb { overflow: hidden; }
 
