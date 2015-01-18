@@ -114,6 +114,8 @@ Typography
     }
     .text-yellow { color: $yellow; }
 
+    .text-email { font-size: 16px; }
+
 
 /*  Links
     ========================================================================== */
@@ -132,7 +134,6 @@ Typography
 */
 
 @media only screen and (min-width: $breakpoint) {
-    .title {
-        font-size: 36px;
-    }
+    .title { font-size: 36px; }
+    .text-email { font-size: inherit; }
 }
