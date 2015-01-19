@@ -35,7 +35,7 @@
 
         .nav-item {
             display: inline-block;
-            margin: 0 10px;
+            margin: 0 5px;
         }
 
         .nav-link { font-size: 14px; }
@@ -47,6 +47,8 @@
             float: left;
             padding-top: 10px;
         }
+
+        .nav-item { margin: 0 10px; }
 
         .nav-link { font-size: 18px; }
 

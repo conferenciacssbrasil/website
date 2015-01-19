@@ -86,7 +86,7 @@
     .hover-3d-yellow:hover span,
     .hover-3d-yellow span:after { background-color: $yellow; }
 
-    .hover-3d-yellow span:after { color: $color-default; }
+    .hover-3d-yellow span:after { color: $blue; }
 
     /* Esconde elemento para todos usuários exceto leitores de tela */
     .sr-only {
