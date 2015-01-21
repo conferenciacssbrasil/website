@@ -14,6 +14,12 @@
                     position: relative;
                     text-align: center;
                     line-height: 1;
+                    font-size: 2em;
+                }
+
+                .logo-intern {
+                    margin-bottom: 20px;
+                    @include transform(scale(.8));
                 }
 
                 .hold-squares { min-height: 150px; }
@@ -89,6 +95,7 @@
             .footer {
                 margin-top: 50px;
                 text-align: center;
+                position: relative;
             }
 
             .hashtag {
@@ -181,7 +188,7 @@
                 .list-holding li {
                     display: inline-block;
                     margin: 0 10px;
-                } 
+                }
     }
 
     /*

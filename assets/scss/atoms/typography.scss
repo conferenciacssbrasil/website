@@ -74,6 +74,7 @@ Typography
     }
 
     .title-small { font-size: 24px; }
+    .title-mini { font-size: 16px; }
 
     .title-inner-shadow {
         text-transform: uppercase;
@@ -116,6 +117,15 @@ Typography
 
     .text-email { font-size: 16px; }
 
+    .conduct-code p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .conduct-code .title-small,
+    .conduct-code .title-mini,
+    .conduct-code p { text-align: left; }
+
 
 /*  Links
     ========================================================================== */
@@ -134,7 +144,10 @@ Typography
 */
 
 @media only screen and (min-width: $breakpoint) {
+
     .title { font-size: 36px; }
     .title-small { font-size: 26px; }
+    .title-mini { font-size: 18px; }
     .text-email { font-size: inherit; }
+
 }
