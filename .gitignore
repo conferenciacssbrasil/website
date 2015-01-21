@@ -4,4 +4,4 @@
 .project
 .idea
 .settings/
-*.psd
+_site
