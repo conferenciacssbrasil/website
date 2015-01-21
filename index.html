@@ -29,7 +29,7 @@
     <meta property="og:image" content="http://www.conferenciacssbrasil.com.br/build/img/css-brasil.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="build/css/main.min.css">
+    <link rel="stylesheet" href="build/css/main.min.css?var=1000">
 
     <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -136,7 +136,7 @@
                             <img class="speaker-img" src="build/img/speakers/caio-gondim.jpg" alt="Foto do Caio Gondim">
                         </a>
                         <h3 class="title title-small speaker-name">Caio Gondim</h3>
-                        <p>Caio é co-fundador do <a href="http://loopinfinito.com.br/" target="_blank">Loop Infinito</a> e atualmente trabalha como desenvolvedor client-side na <a href="http://www.booking.com">Booking.com</a> Amsterdã.</p>
+                        <p>Caio é co-fundador do <a href="http://loopinfinito.com.br/" target="_blank">Loop Infinito</a> e atualmente trabalha como desenvolvedor client-side na <a href="http://www.booking.com" target="_blank">Booking.com</a> Amsterdã.</p>
                         <ul class="speaker-social">
                             <li>
                                 <i class="icon-twitter"></i>
@@ -151,12 +151,27 @@
                             <img class="speaker-img" src="build/img/speakers/eduardo-shiota.jpg" alt="Foto do Eduardo Shiota">
                         </a>
                         <h3 class="title title-small speaker-name">Eduardo Shiota</h3>
-                        <p>Uma das referências no desenvolvimento web brasileiro, Eduardo Shiota hoje trabalha como Front-End Engineer na Booking.com Amsterdã e Instrutor na HowTo.</p>
+                        <p>Uma das referências no desenvolvimento web brasileiro, Eduardo Shiota hoje trabalha como Front-End Engineer na <a href="http://www.booking.com" target="_blank">Booking.com</a> Amsterdã e Instrutor na <a href="http://howtocode.com.br/" target="_blank">HowTo</a>.</p>
                         <ul class="speaker-social">
                             <li>
                                 <i class="icon-twitter"></i>
                                 <a href="https://twitter.com/shiota" class="hover hover-3d speaker-link" target="_blank">
                                     <span data-title="@shiota">@shiota</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="speaker-item">
+                        <a href="https://twitter.com/zehf" class="speaker-thumb" data-social="@zehf"target="_blank">
+                            <img class="speaker-img" src="build/img/speakers/zeh-fernandes.jpg" alt="Foto do Eduardo Shiota">
+                        </a>
+                        <h3 class="title title-small speaker-name">Zeh Fernandes</h3>
+                        <p>Zeh Fernandes é designer, co-fundador do <a href="http://bliive.com/" target="_blank">Bliive.com</a> e da publicação independente de design, Revista Cliche. Atualmente trabalha como Product Design pela <a href="http://d3.do/" target="_blank">D3</a>.</p>
+                        <ul class="speaker-social">
+                            <li>
+                                <i class="icon-twitter"></i>
+                                <a href="https://twitter.com/zehf" class="hover hover-3d speaker-link" target="_blank">
+                                    <span data-title="@zehf">@zehf</span>
                                 </a>
                             </li>
                         </ul>
@@ -203,44 +218,48 @@
             </div>
         </section>
         <section class="container section hold-host">
-          <h2 class="title-shadow">Opções de hospedagem em São Paulo</h2> 
-          
-          <section class="host-box">
-            <h3><a href="http://www.booking.com/hotel/br/beats-hostel.pt-br.html" title="Ir para Booking do Beats Hostel" target="_blank">Beats Hostel</a></h3>
-            <p>A partir de <b>R$ 47 por noite</b></p>
-            <address>Alameda Ribeirão Preto, 258 - Bela Vista <br>  
-            São Paulo - SP <br> 
-            01331-000</address>
-            <a class="btn btn-sm" href="http://www.booking.com/hotel/br/beats-hostel.pt-br.html" target="_blank">Ver mais</a>
-          </section>
+            <div class="row">
+                <h2 class="title title-inner-shadow">Opções de hospedagem</h2>
 
-          <section class="host-box">
-            <h3><a href="http://www.booking.com/hotel/br/diamantina.pt-br.html" title="Ir para Booking do Hotel Diamantina" target="_blank">Hotel Diamantina</a></h3>
-            <p>A partir de <b>R$ 90</b>, com café da manhã.</b></p>
-            <address>Avenida Brigadeiro Luís Antônio, 1513 - Bela Vista<br>  
-            São Paulo - SP<br>  
-            01317-002</address>
-            <a class="btn btn-sm" href="http://www.booking.com/hotel/br/diamantina.pt-br.html" target="_blank">Ver mais</a>
-          </section>
+                <section class="host-box">
+                    <h3 class="title">
+                        <a href="http://www.booking.com/hotel/br/beats-hostel.pt-br.html" title="Ir para Booking do Beats Hostel" target="_blank">Beats Hostel</a>
+                    </h3>
+                    <p>A partir de <b>R$ 47 por noite</b></p>
+                    <address>Alameda Ribeirão Preto, 258 - Bela Vista
+                    </address>
+                    <a href="http://www.booking.com/hotel/br/beats-hostel.pt-br.html" class="hover-3d hover-3d-yellow" target="_blank">
+                        <span data-title="Ver mais">Ver mais</span>
+                    </a>
+                </section>
 
-          <section class="host-box">
-            <h3><a href="http://www.booking.com/hotel/br/carrapso.pt-br.html" title="Ir para Booking do Hotel Carrão" target="_blank">Hotel Carrão</a></h3>
-            <p>A partir de <b>R$ 100</b>, com café da manhã.</b></p>
-            <address>Rua Conselheiro Carrão, 479 - Bela Vista<br>
-            São Paulo - SP<br>
-            01328-000</address>
-            <a class="btn btn-sm" href="http://www.booking.com/hotel/br/carrapso.pt-br.html" target="_blank">Ver mais</a>
-          </section>
+                <section class="host-box">
+                    <h3 class="title"><a href="http://www.booking.com/hotel/br/diamantina.pt-br.html" title="Ir para Booking do Hotel Diamantina" target="_blank">Hotel Diamantina</a></h3>
+                    <p>A partir de <b>R$ 90</b>, com café da manhã.</b></p>
+                    <address>Avenida Brigadeiro Luís Antônio, 1513 - Bela Vista</address>
+                    <a href="http://www.booking.com/hotel/br/diamantina.pt-br.html" class="hover-3d hover-3d-yellow" target="_blank">
+                        <span data-title="Ver mais">Ver mais</span>
+                    </a>
+                </section>
 
-          <section class="host-box">
-            <h3><a href="http://www.booking.com/hotel/br/sao-paulo-paulista.pt-br.html" title="Ir para Booking do Hotel Mercure" target="_blank">Hotel Mercure</a></h3>
-            <p>A partir de <b>R$ 327 (Single)</b> ou <b>R$ 390 (Duplo)</b>, com café da manhã.</b></p>
-            <address>Rua São Carlos do Pinhal, 87 - Bela Vista<br>
-            São Paulo - SP<br>
-            01333-001</address>
-            <a class="btn btn-sm" href="http://www.booking.com/hotel/br/sao-paulo-paulista.pt-br.html" target="_blank">Ver mais</a>
-          </section>
+                <section class="host-box">
+                    <h3 class="title"><a href="http://www.booking.com/hotel/br/carrapso.pt-br.html" title="Ir para Booking do Hotel Carrão" target="_blank">Hotel Carrão</a></h3>
+                    <p>A partir de <b>R$ 100</b>, com café da manhã.</b></p>
+                    <address>Rua Conselheiro Carrão, 479 - Bela Vista</address>
+                    <a href="http://www.booking.com/hotel/br/carrapso.pt-br.html" class="hover-3d hover-3d-yellow" target="_blank">
+                        <span data-title="Ver mais">Ver mais</span>
+                    </a>
+                </section>
 
+                <section class="host-box">
+                    <h3 class="title"><a href="http://www.booking.com/hotel/br/sao-paulo-paulista.pt-br.html" title="Ir para Booking do Hotel Mercure" target="_blank">Hotel Mercure</a></h3>
+                    <p>A partir de <b>R$ 327 (Single)</b> ou <b>R$ 390 (Duplo)</b>, com café da manhã.</b></p>
+                    <address>Rua São Carlos do Pinhal, 87 - Bela Vista</address>
+                    <a href="http://www.booking.com/hotel/br/sao-paulo-paulista.pt-br.html" class="hover-3d hover-3d-yellow" target="_blank">
+                        <span data-title="Ver mais">Ver mais</span>
+                    </a>
+                </section>
+            </div>
         </section>
 
     </main>

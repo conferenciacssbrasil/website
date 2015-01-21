@@ -1,0 +1,120 @@
+/*  ==========================================================================
+    Base
+    ========================================================================== */
+    ::-moz-selection {
+        background: #666;
+        text-shadow: none;
+        color: #fff;
+    }
+
+    ::selection {
+        background: #666;
+        text-shadow: none;
+        color: #fff;
+    }
+
+    img,
+    object,
+    embed,
+    iframe { max-width: 100%; }
+
+    img { height: auto; }
+
+    * { @include box-sizing(); }
+
+    hr {
+        margin: 25px auto;
+        max-width: 50%;
+    }
+
+/*  ==========================================================================
+    Helper classes
+    ========================================================================== */
+    .hover { @include transition(opacity 0.25s ease); }
+    .hover:hover { @include opacity(0.8); }
+
+    .pull-left { float: left; }
+    .pull-right { float: right; }
+
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+    .text-center { text-align: center; }
+    .text-justify { text-align: justify; }
+
+    .hide { display: none; }
+    .block { display: block; }
+    .space { margin-bottom: $space; }
+
+    .hover-3d {
+        display: inline-block;
+        text-decoration: none;
+        overflow: hidden;
+        vertical-align: top;
+        @include perspective(600px);
+        @include perspective-origin(50%, 50%);
+    }
+
+    .hover-3d:hover { text-decoration: none; }
+    .hover-3d:hover span {
+        background-color: $green;
+        @include transform(translate3d( 0px, 0px, -30px ) rotateX( 90deg ));
+        text-decoration: none;
+    }
+
+    .hover-3d span {
+        display: block;
+        position: relative;
+        padding: 2px 5px;
+        @include transition(all .5s ease);
+        @include origin(50%, 0%);
+        @include transform-style(preserve-3d);
+    }
+
+    .hover-3d span:after {
+        content: attr(data-title);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 2px 5px;
+        color: #fff;
+        background-color: $green;
+        @include origin(50%, 0%);
+        @include transform(translate3d( 0px, 105%, 0px ) rotateX( -90deg ));
+    }
+
+    .hover-3d-yellow:hover span,
+    .hover-3d-yellow span:after { background-color: $yellow; }
+
+    .hover-3d-yellow span:after { color: $blue; }
+
+    /* Esconde elemento para todos usuários exceto leitores de tela */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        border: 0;
+    }
+
+    .sr-only:active,
+    .sr-only:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    /*  Go content
+        ========================================================================== */
+        .go-content {
+            padding: 2px 0;
+            font-size: 14px;
+            text-align: center;
+            display: block;
+        }

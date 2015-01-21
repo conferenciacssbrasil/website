@@ -1,0 +1,51 @@
+/*  ==========================================================================
+    Grid calc
+    ========================================================================== */
+
+/*  ==========================================================================
+    Grid
+    ========================================================================== */
+    body {
+        width: 100%;
+        @include clearfix();
+    }
+
+
+    @media only screen {
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .row {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            @include clearfix();
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .intro { margin-bottom: 25px; }
+    }
+
+    /*
+     * CSS for devices with resolution higher than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+        
+        .row {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: $max-width;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }

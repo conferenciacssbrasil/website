@@ -1,0 +1,72 @@
+/*  ==========================================================================
+    Animation
+    ========================================================================== */
+
+    /*  Logo
+        ========================================================================== */
+        .square:nth-child(1) { @include animation(letterC 0.75s both); }
+        .square:nth-child(2) { @include animation(letterS 0.75s 0.4s both); }
+        .square:nth-child(3) { @include animation(letterS_ 0.75s 1s both); }
+
+        .square:nth-child(1) .letter { @include animation(cssLetters 0.5s 1.5s both); }
+        .square:nth-child(2) .letter { @include animation(cssLetters 0.5s 1.75s both); }
+        .square:nth-child(3) .letter { @include animation(cssLetters 0.5s 2s both); }
+
+        .property { @include animation(
+            typing 1.75s 2.5s steps(14, end) both,
+            cursorText 1s 2s 3 both);
+        }
+
+        //.year { @include animation(fadeIn .5s 5.5s both); }
+
+    /*  Info
+        ========================================================================== */
+        .lead span:nth-child(1) { @include animation(fadeIn 1s 5.25s ease both); }
+        .lead span:nth-child(2) { @include animation(fadeIn 1s 6.25s ease both); }
+        .arrow { @include animation(fadeInDown 0.75s 7s ease both); }
+        .btn-subscription { @include animation(bounceIn 0.75s 7.75s ease both); }
+
+    /*  Sections
+        ========================================================================== */
+        .section { @include animation(fadeIn 1s 9.25s ease both); }
+        
+
+    /*  Footer
+        ========================================================================== */
+        .holding { @include animation(fadeIn 0.5s 10s ease both); }
+
+    /*  Preload
+        ========================================================================== */
+        .preload .logo,
+        .preload .square .letter,
+        .preload .lead span,
+        .preload .square,
+        .preload .share,
+        .preload .btn,
+        .preload .arrow,
+        .preload .small,
+        .preload .property,
+        .preload .footer,
+        .preload .section {
+            -webkit-animation-play-state: paused;
+               -moz-animation-play-state: paused;
+                 -o-animation-play-state: paused;
+                    animation-play-state: paused;
+        }
+
+        .static .logo,
+        .static .square .letter,
+        .static .lead span,
+        .static .square,
+        .static .share,
+        .static .btn,
+        .static .arrow,
+        .static .small,
+        .static .property,
+        .static .footer,
+        .static .year,
+        .static .share li,
+        .static .holding,
+        .static .section { @include animation(none);  }
+
+        .static .property { border: none; }
