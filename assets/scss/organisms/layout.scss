@@ -128,14 +128,13 @@
         /*  Local
             ========================================================================== */
            .hold-local {
-                position: relative;
                 background: transparent url(../img/maksoud-plaza.jpg) center center no-repeat;
                 @include background-size(cover);
                 padding-top: 100px;
                 padding-bottom: 100px;
             }
 
-            .hold-local:before {
+            .hold-local:after {
                 z-index: 0;
                 content: "";
                 position: absolute;
@@ -198,18 +197,27 @@
 
         /*  Partners
             ========================================================================== */
-            .hold-partners { background-color: $blue; }
+            .hold-partners { background-color: #fff; }
 
-            .hold-partners .title,
-            .hold-partners p {
-                color: #fff;
+            .partners-group { padding: 15px 0 45px; }
+
+            .partner-logo {
+                display: inline-block;
+                margin: 0 10px;
             }
 
-            .hold-partners a { color: $yellow; }
+            .partner-logo a { @include transition(all .3s ease); }
+
+            .partner-logo a:hover,
+            .partner-logo a:focus { opacity: .8; }
+
 
         /*  Subscribe
             ========================================================================== */
-            .hold-subscribe { background-color: #fff; }
+            .hold-subscribe { background-color: $blue; }
+
+            .hold-subscribe .title,
+            .hold-subscribe p { color: #fff; }
 
         /*  Host
             ========================================================================== */
