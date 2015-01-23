@@ -10,6 +10,12 @@
         @include clearfix();
     }
 
+    html,
+    body {
+        height: 100%;
+        min-height: 100%;
+    }
+
 
     @media only screen {
         .container {
@@ -27,12 +33,16 @@
         }
 
         .section {
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-top: 150px;
+            padding-bottom: 80px;
+            position: relative;
+            width: 100%;
+            display: block;
         }
-
-        .intro { margin-bottom: 25px; }
-
+        
+        /*
+         * Specific align adjustments
+         */
         .conduct-code { padding-top: 130px; }
     }
 
@@ -49,5 +59,17 @@
             padding-left: 0;
             padding-right: 0;
         }
+
+        .section { padding-top: 80px; }
+
+        .section-full {
+            min-height: 100vh;
+            vertical-align: middle;
+
+            .row {
+            }
+        }
+
+        .intro { padding-top: 120px; }
 
     }
