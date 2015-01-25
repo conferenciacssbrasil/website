@@ -199,18 +199,25 @@
             ========================================================================== */
             .hold-partners { background-color: #fff; }
 
-            .partners-group { padding: 15px 0 45px; }
+            .partners-group { padding: 15px 0; }
 
             .partner-logo {
                 display: inline-block;
-                margin: 0 10px;
+                margin: 15px;
             }
+
+            .partners-group .title { margin-bottom: 5px; }
 
             .partner-logo a { @include transition(all .3s ease); }
 
             .partner-logo a:hover,
             .partner-logo a:focus { opacity: .8; }
-
+            
+            .partners-group + p {
+                border-top: solid 1px #eee;
+                padding-top: 25px;
+                margin-top: 10px;
+            }
 
         /*  Subscribe
             ========================================================================== */
@@ -274,6 +281,9 @@
                 + .host-box { border: none; }
             }
 
-            .host-box:hover { background-color: darken($green, 3%); }
+            .host-box:hover {
+                background-color: darken($green, 3%);
+                @include transform(scale(1.05));
+            }
 
     }
