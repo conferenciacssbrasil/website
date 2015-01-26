@@ -4,10 +4,6 @@
 
     @media only screen {
 
-        .section {
-            // @include box-shadow(0 0 20px 0 rgba(0,0,0,.5) inset);
-        }
-
         /*  Line
             ========================================================================== */
             .line {
@@ -132,12 +128,13 @@
         /*  Local
             ========================================================================== */
            .hold-local {
-                position: relative;
                 background: transparent url(../img/maksoud-plaza.jpg) center center no-repeat;
                 @include background-size(cover);
+                padding-top: 100px;
+                padding-bottom: 100px;
             }
 
-            .hold-local:before {
+            .hold-local:after {
                 z-index: 0;
                 content: "";
                 position: absolute;
@@ -200,18 +197,34 @@
 
         /*  Partners
             ========================================================================== */
-            .hold-partners { background-color: $blue; }
+            .hold-partners { background-color: #fff; }
 
-            .hold-partners .title,
-            .hold-partners p {
-                color: #fff;
+            .partners-group { padding: 15px 0; }
+
+            .partner-logo {
+                display: inline-block;
+                margin: 15px;
             }
 
-            .hold-partners a { color: $yellow; }
+            .partners-group .title { margin-bottom: 5px; }
+
+            .partner-logo a { @include transition(all .3s ease); }
+
+            .partner-logo a:hover,
+            .partner-logo a:focus { opacity: .8; }
+            
+            .partners-group + p {
+                border-top: solid 1px #eee;
+                padding-top: 25px;
+                margin-top: 10px;
+            }
 
         /*  Subscribe
             ========================================================================== */
-            .hold-subscribe { background-color: #fff; }
+            .hold-subscribe { background-color: $blue; }
+
+            .hold-subscribe .title,
+            .hold-subscribe p { color: #fff; }
 
         /*  Host
             ========================================================================== */
@@ -268,6 +281,9 @@
                 + .host-box { border: none; }
             }
 
-            .host-box:hover { background-color: darken($green, 3%); }
+            .host-box:hover {
+                background-color: darken($green, 3%);
+                @include transform(scale(1.05));
+            }
 
     }

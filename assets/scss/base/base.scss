@@ -88,6 +88,11 @@
 
     .hover-3d-yellow span:after { color: $blue; }
 
+    .hover-3d-green:hover span,
+    .hover-3d-green span:after { background-color: $green; }
+
+    .hover-3d-green span:after { color: #fff; }
+
     /* Esconde elemento para todos usuários exceto leitores de tela */
     .sr-only {
         position: absolute;

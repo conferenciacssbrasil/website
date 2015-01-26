@@ -27,12 +27,26 @@
         }
 
         .section {
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-top: 150px;
+            padding-bottom: 80px;
+            position: relative;
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+            height: 100%;
+            height: 100vh;
         }
 
-        .intro { margin-bottom: 25px; }
+        .section-content {
+            padding-top: 30px;
+            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+        }
 
+        /*
+         * Specific align adjustments
+         */
         .conduct-code { padding-top: 130px; }
     }
 
@@ -49,5 +63,8 @@
             padding-left: 0;
             padding-right: 0;
         }
+
+        .section { padding-top: 80px; }
+        .intro { padding-top: 120px; }
 
     }
