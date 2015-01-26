@@ -48,16 +48,17 @@
                 overflow: hidden;
             }
 
-            .talk-time {
-                margin: 0;
-            }
-
             .sub-title {
                 font-size: 18px;
                 margin: 5px 0 20px;
                 letter-spacing: 1.5px;
                 text-transform: uppercase;
             }
+
+            .talk-time {
+                margin: 10px 0 0;
+            }
+
         } 
 
         .timeline-warning {
@@ -76,20 +77,21 @@
                 border: 0;
                 margin: 0;
                 border-left: 4px solid rgba(#000, .15);   
-                padding: 0 30px 130px;
+                padding: 0 30px 180px;
+                min-height: 260px;
                 position: relative;
                 text-align: left;  
 
                 &:before {
                     content: "";
                     border-radius: 50%;
-                    border: 4px solid $blue;
-                    background: $green;
-                    height: 16px;
+                    border: 3px solid $green;
+                    background: $yellow;
+                    height: 10px;
                     position: absolute;
                     top: 0;
-                    left: -13px;
-                    width: 16px;
+                    left: -8px;
+                    width: 10px;
                 }
 
                 p {
@@ -110,7 +112,7 @@
             }
 
          .box-speaker-media {
-             border: $green 2px solid;
+             border: $blue 2px solid;
              border-radius: 50%;
              display: inline-block;
              position: relative;
@@ -121,18 +123,6 @@
 
          .talk-time {
              margin: 0;
-         }
-
-         .sub-title {
-             font-size: 18px;
-             margin: 5px 0 20px;
-             letter-spacing: 1.5px;
-             text-transform: uppercase;
-         }
-        } 
-
-        .timeline-warning {
-         font-size: 12px;
-         margin-top: 20px;
-        }
+         } 
+        }  
     }
