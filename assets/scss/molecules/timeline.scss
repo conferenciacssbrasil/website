@@ -1,0 +1,138 @@
+/*  ==========================================================================
+    Timeline
+    ========================================================================== */
+
+    @media only screen {
+
+        .timeline {
+            list-style: none;
+            margin: 40px 0 0;
+            padding: 0;
+
+            li { 
+                color: $gray;   
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid rgba(#000, .15);   
+ 
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .box-spearker { 
+                .sub-title,
+                p {
+                    margin: 0 0 5px;
+                }
+
+                .icon-twitter {
+                    display: inline-block;
+                    margin-top: 5px;
+                    vertical-align: middle;
+                }
+            }
+
+            .box-speaker-media {
+                border: $green 2px solid;
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 20px;
+                max-width: 150px;  
+                overflow: hidden;
+            }
+
+            .talk-time {
+                margin: 0;
+            }
+
+            .sub-title {
+                font-size: 18px;
+                margin: 5px 0 20px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+            }
+        } 
+
+        .timeline-warning {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint) {
+        .timeline {
+            position: relative;
+            left: 50%;
+            width: 50%; 
+
+            li {
+                border: 0;
+                margin: 0;
+                border-left: 4px solid rgba(#000, .15);   
+                padding: 0 30px 130px;
+                position: relative;
+                text-align: left;  
+
+                &:before {
+                    content: "";
+                    border-radius: 50%;
+                    border: 4px solid $blue;
+                    background: $green;
+                    height: 16px;
+                    position: absolute;
+                    top: 0;
+                    left: -13px;
+                    width: 16px;
+                }
+
+                p {
+                    text-align: left;
+                } 
+            }
+
+            .box-spearker {
+                position: absolute;
+                top: -25px; 
+                text-align: right; 
+                left: -330px;
+                width: 300px; 
+
+                p { 
+                    text-align: right; 
+                } 
+            }
+
+         .box-speaker-media {
+             border: $green 2px solid;
+             border-radius: 50%;
+             display: inline-block;
+             position: relative;
+             margin-bottom: 20px;
+             max-width: 150px;  
+             overflow: hidden;
+         }
+
+         .talk-time {
+             margin: 0;
+         }
+
+         .sub-title {
+             font-size: 18px;
+             margin: 5px 0 20px;
+             letter-spacing: 1.5px;
+             text-transform: uppercase;
+         }
+        } 
+
+        .timeline-warning {
+         font-size: 12px;
+         margin-top: 20px;
+        }
+    }
