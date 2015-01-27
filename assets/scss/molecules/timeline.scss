@@ -33,19 +33,23 @@
 
                 .icon-twitter {
                     display: inline-block;
-                    margin-top: 5px;
+                    margin-left: 5px;
                     vertical-align: middle;
                 }
             }
 
             .box-speaker-media {
-                border: $green 2px solid;
-                border-radius: 50%;
                 display: inline-block;
                 position: relative;
-                margin-bottom: 20px;
-                max-width: 150px;  
-                overflow: hidden;
+                margin-bottom: 20px; 
+                overflow: hidden; 
+
+                img {
+                  border: $blue 2px solid; 
+                  display: inline-block;
+                  vertical-align: bottom; 
+                  max-width: 140px; 
+                }
             }
 
             .sub-title {
@@ -108,21 +112,15 @@
 
                 p { 
                     text-align: right; 
+                }
+
+                a {
+                    vertical-align: middle;
                 } 
             }
-
-         .box-speaker-media {
-             border: $blue 2px solid;
-             border-radius: 50%;
-             display: inline-block;
-             position: relative;
-             margin-bottom: 20px;
-             max-width: 150px;  
-             overflow: hidden;
-         }
-
-         .talk-time {
-             margin: 0;
-         } 
+ 
+            .talk-time {
+                margin: 0;
+            } 
         }  
     }
