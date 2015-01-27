@@ -224,7 +224,17 @@
             .hold-subscribe { background-color: $yellow; }
 
             .hold-subscribe .title,
-            .hold-subscribe p { color: #fff; }
+            .hold-subscribe p { color: $gray; }
+
+            .hold-subscribe .btn {
+              border-color: $green;
+              color: $green;
+
+              &:hover {
+                background: $green;
+                color: $yellow;
+              }
+            }
 
         /*  Host
             ========================================================================== */
@@ -233,7 +243,7 @@
             .host-box {
                 padding: 30px 0;
 
-                + .host-box { border-top: solid 1px darken($green, 8%); }
+                + .host-box { border-top: solid 1px darken($blue, 8%); }
 
                 .title { font-size: 20px; }
 
@@ -256,7 +266,7 @@
                     @include transform(translateY(10px));
                 }
 
-                .hover-3d-yellow span:after { color: $green; }
+                .hover-3d-yellow span:after { color: $blue; }
             }
     }
 
@@ -282,7 +292,7 @@
             }
 
             .host-box:hover {
-                background-color: darken($green, 3%);
+                background-color: darken($blue, 3%);
                 @include transform(scale(1.05));
             }
 
