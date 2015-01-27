@@ -7,7 +7,7 @@
         .timeline {
             list-style: none;
             margin: 40px 0 0;
-            padding: 0;
+            padding: 0 15px;
 
             li {
                 color: $gray;
@@ -26,10 +26,9 @@
             }
 
             .box-speaker {
+
                 .sub-title,
-                p {
-                    margin: 0 0 5px;
-                }
+                p { margin: 0 0 5px; }
 
                 .icon-twitter {
                     display: inline-block;
@@ -39,17 +38,15 @@
             }
 
             .box-speaker-media {
-                display: inline-block;
                 position: relative;
                 max-width: 150px;
-                margin-bottom: 20px;
-                overflow: hidden;
+                border: $green 5px solid;
+                margin: 0 5px 10px;
+                display: inline-block;
 
                 img {
-                  border: $blue 2px solid;
                   display: inline-block;
                   vertical-align: bottom;
-                  max-width: 140px;
                 }
             }
 
@@ -60,9 +57,7 @@
                 text-transform: uppercase;
             }
 
-            .talk-time {
-                margin: 10px 0 0;
-            }
+            .talk-time { margin: 10px 0 0; }
 
         }
 
@@ -74,60 +69,77 @@
 
     @media only screen and (min-width: $breakpoint) {
         .timeline {
-            position: relative;
-            left: 50%;
-            width: 50%;
+            // position: relative;
+            // left: 50%;
+            // width: 50%;
+            width: 100%;
 
             li {
                 border: 0;
                 margin: 0;
-                border-left: 4px solid rgba(#000, .15);
-                padding: 0 30px 180px;
-                min-height: 260px;
+                //border-left: 4px solid rgba(#000, .15);
+                // padding: 0 30px 180px;
+                // min-height: 260px;
+                padding: 50px 50px 50px 20px;
                 position: relative;
                 text-align: left;
-
-                &:before {
-                    content: "";
-                    border-radius: 50%;
-                    border: 3px solid $green;
-                    background: $yellow;
-                    height: 10px;
-                    position: absolute;
-                    top: 0;
-                    left: -10px;
-                    width: 10px;
-                }
+                overflow: hidden;
 
                 p {
                     text-align: left;
                 }
-            }
 
-            li:hover .box-speaker-media {
-                border-color: $blue;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    top: 0;
+                    height: 100%;
+                    width: 4px;
+                    background-color: rgba(0,0,0, .15);
+                }
             }
 
             .box-speaker {
-                position: absolute;
-                top: -50px;
+                float: left;
+                width: 50%;
+                padding-right: 25px;
+                // position: absolute;
+                // top: 0;
+                // text-align: right;
+                // left: -330px;
+                // width: 300px;
                 text-align: right;
-                left: -330px;
-                width: 300px;
 
                 p {
                     text-align: right;
                 }
             }
 
+            .box-talk {
+                position: relative;
+                float: right;
+                width: 50%;
+                padding-left: 60px;
+            }
+
+            .box-talk:before {
+                content: "";
+                border: 3px solid $green;
+                background: $yellow;
+                height: 10px;
+                position: absolute;
+                top: 2px;
+                left: 8px;
+                width: 10px;
+                z-index: 1;
+            }
+
             .box-speaker-media {
-                border: $green 5px solid;
-                border-radius: 50%;
                 display: inline-block;
                 position: relative;
                 margin-bottom: 20px;
                 max-width: 150px;
-                overflow: hidden;
                 @include transition(all .3s ease);
             }
 
