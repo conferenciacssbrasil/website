@@ -9,12 +9,12 @@
             margin: 40px 0 0;
             padding: 0;
 
-            li { 
-                color: $gray;   
+            li {
+                color: $gray;
                 padding-bottom: 20px;
                 margin-bottom: 20px;
-                border-bottom: 1px solid rgba(#000, .15);   
- 
+                border-bottom: 1px solid rgba(#000, .15);
+
                 p {
                     font-size: 16px;
                     line-height: 20px;
@@ -25,7 +25,7 @@
                 }
             }
 
-            .box-spearker { 
+            .box-speaker {
                 .sub-title,
                 p {
                     margin: 0 0 5px;
@@ -44,7 +44,7 @@
                 display: inline-block;
                 position: relative;
                 margin-bottom: 20px;
-                max-width: 150px;  
+                max-width: 150px;
                 overflow: hidden;
             }
 
@@ -59,7 +59,7 @@
                 margin: 10px 0 0;
             }
 
-        } 
+        }
 
         .timeline-warning {
             font-size: 12px;
@@ -71,16 +71,16 @@
         .timeline {
             position: relative;
             left: 50%;
-            width: 50%; 
+            width: 50%;
 
             li {
                 border: 0;
                 margin: 0;
-                border-left: 4px solid rgba(#000, .15);   
+                border-left: 4px solid rgba(#000, .15);
                 padding: 0 30px 180px;
                 min-height: 260px;
                 position: relative;
-                text-align: left;  
+                text-align: left;
 
                 &:before {
                     content: "";
@@ -96,33 +96,38 @@
 
                 p {
                     text-align: left;
-                } 
+                }
             }
 
-            .box-spearker {
-                position: absolute;
-                top: -25px; 
-                text-align: right; 
-                left: -330px;
-                width: 300px; 
+            li:hover .box-speaker-media {
+                border-color: $blue;
+            }
 
-                p { 
-                    text-align: right; 
-                } 
+            .box-speaker {
+                position: absolute;
+                top: -50px;
+                text-align: right;
+                left: -330px;
+                width: 300px;
+
+                p {
+                    text-align: right;
+                }
             }
 
          .box-speaker-media {
-             border: $blue 2px solid;
+             border: $green 5px solid;
              border-radius: 50%;
              display: inline-block;
              position: relative;
              margin-bottom: 20px;
-             max-width: 150px;  
+             max-width: 150px;
              overflow: hidden;
+             @include transition(all .3s ease);
          }
 
          .talk-time {
              margin: 0;
-         } 
-        }  
+         }
+        }
     }

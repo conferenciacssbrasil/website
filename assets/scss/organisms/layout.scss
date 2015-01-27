@@ -212,7 +212,7 @@
 
             .partner-logo a:hover,
             .partner-logo a:focus { opacity: .8; }
-            
+
             .partners-group + p {
                 border-top: solid 1px #eee;
                 padding-top: 25px;
@@ -240,6 +240,11 @@
             ========================================================================== */
             .hold-host { background-color: $blue; }
 
+            .hold-host .title,
+            .host-box .title a,
+            .host-box p,
+            .host-box  address { color: #fff; }
+
             .host-box {
                 padding: 30px 0;
 
@@ -249,10 +254,7 @@
 
                 .title a,
                 p,
-                address {
-                    color: #fff;
-                    text-align: center;
-                }
+                address { text-align: center; }
 
                 address { font-size: 14px; }
 
