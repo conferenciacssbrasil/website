@@ -61,6 +61,7 @@
                 height: 100%;
                 position: fixed;
                 @include transition(all 1s);
+                z-index: 999;
             }
 
             .circle {

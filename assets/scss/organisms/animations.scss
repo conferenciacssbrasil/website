@@ -25,10 +25,6 @@
         .lead span:nth-child(2) { @include animation(fadeIn 1s 6.25s ease both); }
         .arrow { @include animation(fadeInDown 0.75s 7s ease both); }
         .btn-subscription { @include animation(bounceIn 0.75s 7.75s ease both); }
-
-    /*  Sections
-        ========================================================================== */
-        .section { @include animation(fadeIn 1s 9.25s ease both); }
         
 
     /*  Footer

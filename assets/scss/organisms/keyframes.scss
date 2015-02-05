@@ -65,7 +65,7 @@
         @media only screen and (min-width: $breakpoint) {
           @include keyframes(typing) {
               from { width: 0; }
-              to { width: 580px; }
+              to { width: 490px; }
           } 
         }
           
