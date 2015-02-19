@@ -209,10 +209,17 @@
 
             .partners-group .title { margin-bottom: 5px; }
 
-            .partner-logo a { @include transition(all .3s ease); }
+            .partner-logo a {
+                display: inline-block;
+                @include transition(opacity .3s ease, border .6s ease);
+                border: solid 5px white;
+            }
 
             .partner-logo a:hover,
-            .partner-logo a:focus { opacity: .8; }
+            .partner-logo a:focus {
+                opacity: .8;
+                border-color: $green;
+            }
 
             .partners-group + p {
                 border-top: solid 1px #eee;
