@@ -212,7 +212,7 @@
             .partner-logo a {
                 display: inline-block;
                 @include transition(opacity .3s ease, border .6s ease);
-                border: solid 5px white;
+                border: solid 5px #eee;
             }
 
             .partner-logo a:hover,
