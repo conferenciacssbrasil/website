@@ -39,6 +39,23 @@
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-56024822-1');ga('send','pageview');
     </script>
+
+    <script>(function() {
+      var _fbq = window._fbq || (window._fbq = []);
+      if (!_fbq.loaded) {
+        var fbds = document.createElement('script');
+        fbds.async = true;
+        fbds.src = '//connect.facebook.net/en_US/fbds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fbds, s);
+        _fbq.loaded = true;
+      }
+      _fbq.push(['addPixelId', '357819701089508']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=357819701089508&amp;ev=PixelInitialized" /></noscript>
 </head>
 <body class="">
     <div id="loading" class="loading">
@@ -149,7 +166,7 @@
                         <li class="speaker-item">
                             <a href="https://twitter.com/bernarddeluna" class="speaker-thumb" data-social="@bernarddeluna" target="_blank">
                                 <h3 class="speaker-title">Bernard de Luna</h3>
-                                <img class="speaker-img" src="build/img/speakers/bernard-de-luna.jpg" alt="Foto do Bernard de Luna">
+                                <img class="speaker-img" src="build/img/speakers/bernard-luna.jpg" alt="Foto do Bernard de Luna">
                             </a>
                         </li>
                         <li class="speaker-item">
@@ -177,6 +194,12 @@
                             </a>
                         </li>
                         <li class="speaker-item">
+                            <a href="https://twitter.com/loumontano" class="speaker-thumb" data-social="@loumontano"target="_blank">
+                                <h3 class="speaker-title">Lourdes Montano</h3>
+                                <img class="speaker-img" src="build/img/speakers/lourdes-montano.jpg" alt="Foto da Lourdes Montano">
+                            </a>
+                        </li>
+                        <li class="speaker-item">
                             <a href="https://twitter.com/zehf" class="speaker-thumb" data-social="@zehf"target="_blank">
                                 <h3 class="speaker-title">Zeh Fernandes</h3>
                                 <img class="speaker-img" src="build/img/speakers/zeh-fernandes.jpg" alt="Foto do Zeh Fernandes">
@@ -190,200 +213,230 @@
         <!-- Schedule -->
         <section class="section hold-schedule" id="programacao">
             <div class="section-content">
-                <h2 class="title title-section">Programação</h2>
+                <div class="row">
+                    <h2 class="title title-section">Programação</h2>
+                    <ul class="timeline">
+                        <li>
+                            <div class="box-talk">
+                                <h3 class="talk-time">8:00 - 9:00</h3>
+                                <h4 class="sub-title">Credenciamento</h4>
+                                <p>Não esqueça de trazer seu RG.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-talk">
+                                <h3 class="talk-time">8:30 - 9:00</h3>
+                                <h4 class="sub-title">Welcome Coffee</h4>
+                                <p>Antes do evento começar, aproveite para tomar um café e atualizar o seu networking.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img alt="Foto do Daniel Filho" src="build/img/speakers/daniel-filho.jpg">
+                                </div>
+                                <h3 class="sub-title">Daniel Filho</h3>
+                                <p>Desenvolvedor especialista na <a href="http://netshoes.com.br" target="_blank">Netshoes</a></p>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/danielfilho" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@danielfilho">@danielfilho</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">9:00- 9:20</h3>
+                                <h4 class="sub-title">Abertura / O Nascimento da Conferência CSS Brasil</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img alt="Foto do Zeh Fernandes" src="build/img/speakers/zeh-fernandes.jpg">
+                                </div>
+                                <h3 class="sub-title">Zeh Fernandes</h3>
+                                <p>Product Design na <a href="http://d3.do/" target="_blank">D3</a></p>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/zehf" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@zehf">@zehf</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">9:30- 10:15</h3>
+                                <h4 class="sub-title">Motions UI com CSS</h4>
+                                <p>O crescimento de uso de animações na interface foi um dos marcos de 2014. Apresentar esses conceitos, como animação vem sendo usada para ajudar o design e o usuário e realizar tudo isso com CSS.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/eduardo-shiota.jpg" alt="Foto do Eduardo Shiota">
+                                </div>
+                                <h3 class="sub-title">Eduardo Shiota</h3>
+                                <p>Front-End Engineer na <a href="http://www.booking.com" target="_blank">Booking.com</a></p>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/shiota" class="hover hover-3d speaker-link" target="_blank">
+                                      <span data-title="@shiota">@shiota</span>
+                                  </a>
+                              </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">10:30- 11:15</h3>
+                                <h4 class="sub-title">Dominando a tipografia na web</h4>
+                                <p>A tipografia é uma prática de quase seis séculos e percorreu um longo caminho desde os tipos móveis de Gutenberg aos documentos digitais que conhecemos hoje. Mas em algum ponto, a habilidade técnica e as boas práticas dos artesãos e tipógrafos foram esquecidas por muitos desenvolvedores web, que acabam dependendo do navegador, de frameworks e tentativa-e-erro para mostrar o conteúdo de um website de maneira legível.</p>
+                                <p>Nesta palestra, iremos rever os conceitos básicos da tipografia—unidades, alinhamentos, símbolos e boas práticas; como usá-los para melhorar a identidade, arquitetura e legibilidade do conteúdo; e como fazê-lo com HTML e CSS.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/bernard-luna.jpg" alt="Foto do Bernard de Luna">
+                                </div>
+                                <h3 class="sub-title">Bernard de Luna</h3>
+                                <p>Community Manager and Product Leader at <a href="http://imasters.com.br/" target="_blank">iMasters</a></p>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/bernarddeluna" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@bernarddeluna">@bernarddeluna</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">11:35- 12:10</h3>
+                                <h4 class="sub-title">The BGs</h4>
+                                <p>Bernard De Luna atua em projetos digitais desde 1999, já participou de diversos projetos do Brasil, EUA, Inglaterra, França e Austrália. Já foi lider de produto no <i>Jornal do Brasil</i> e <i>Petrobras</i>, foi Diretor criativo da <i>Melt DSP</i>, Coordenador de produto da <i>Estante Virtual</i> e Head de produto no <i>Videolog</i>, atualmente é Líder de produto do <i>iMasters</i>, Especialista de inovação do <i>Startup NAVE</i> da Estácio e Co-founder do <i>Freteiros.com</i>. Especializado em Front-end, Design funcional e pós graduado em Marketing Digital, Bernard já deu mentoria na <i>Lean Startup Machine</i>, <i>Startup Weekend, Next, Papaya Ventures, Desafio Brasil, Ideation, 21212, Aceleratech</i> e <i>Startup NAVE</i>, já palestrou em mais de 80 eventos pelo Brasil, além do evento internacional do <i>W3C, Startup Camp LATAM, HTML5DevConf, InterCon iMasters, BRAPPS</i>, entre outros. No tempo vago, adora tirar foto do seu cachorro com a hashtag #jupidog, tem uma mania feia de falar em terceira pessoa e se auto-intitula "sexy web projects specialist".</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-talk">
+                                <h3 class="talk-time">12:20 - 13:50</h3>
+                                <h4 class="sub-title">Almoço</h4>
+                                <p>Várias lanchonetes e restaurantes ao redor.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/eduardo-matos.jpg" alt="Foto do Eduardo Matos">
+                                </div>
+                                <h3 class="sub-title">Eduardo Matos</h3>
+                                <p>CTO e Programador na <a href="http://mustachelabs.cc" target="_blank">MustacheLabs</a></p>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/eduardojmatos" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@eduardojmatos">@eduardojmatos</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">14:00- 14:45</h3>
+                                <h4 class="sub-title">Testando seu CSS!</h4>
+                                <p>Teste de integração, ok. Teste de JavaScript, ok. Teste de CSS.... O quê? Sim! Nessa palestra você vai aprender que é possível testar CSS sem muita dor de cabeça. Até o diretor de arte vai gostar.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/lourdes-montano.jpg" alt="Foto da Lourdes Montano">
+                                </div>
+                                <h3 class="sub-title">Lourdes Montano</h3>
+                                <p>Senior Front-End Developer na <a href="http://www.rga.com/" target="_blank">R/GA Buenos Aires</a></p>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/loumontano" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@loumontano">@loumontano</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">15:05- 15:55</h3>
+                                <h4 class="sub-title">CSS Preprocessors: Sass 101</h4>
+                                <p>Ao abordar grandes projetos, a ordem do código e a estrutura de arquivos são essenciais para escalabilidade. CSS não é excessão. Nessa palestra vamos ver como trabalhar com um dos pré processadores mais utilizados na atualidade: Sass. Seu uso, melhores práticas e funções mais úteis.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/anonimo.jpg" alt="Aguardando palestrante">
+                                </div>
+                                <h3 class="sub-title">Em breve</h3>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">16:15- 16:35</h3>
+                                <h4 class="sub-title">Em breve!</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-talk">
+                                <h3 class="talk-time">16:45 - 17:15</h3>
+                                <h4 class="sub-title">Coffee break</h4>
+                                <p>Pausa pra dar aquela reabastecida, esticar as pernas e voltar para as últimas talks do evento!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/almir-filho.jpg" alt="Foto do Almir Filho">
+                                </div>
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/caio-gondim.jpg" alt="Foto do Caio Gondim">
+                                </div>
+                                <h3 class="sub-title">Almir Filho / Caio Gondim</h3>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/almirfilho" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@almirfilho">@almirfilho</span>
+                                    </a> /
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/caio_gondim" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@caio_gondim">@caio_gondim</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">17:20- 18:20</h3>
+                                <h4 class="sub-title">Aguardando tema da palestra!</h4>
+                                <p>Almir é co-fundador do <a href="http://loopinfinito.com.br/" target="_blank">Loop Infinito</a>, onde compartilha seu conhecimento sobre front-end. Atualmente é desenvolvedor full stack na Globo.com.</p>
+                                <p>Caio é co-fundador do <a href="http://loopinfinito.com.br/" target="_blank">Loop Infinito</a> e atualmente trabalha como desenvolvedor client-side na <a href="http://www.booking.com" target="_blank">Booking.com</a> Amsterdã.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-speaker">
+                                <div class="box-speaker-media">
+                                    <img src="build/img/speakers/diego-eis.jpg" alt="Diego Eis">
+                                </div>
+                                <h3 class="sub-title">Diego Eis</h3>
+                                <p>Coordenador do time de front-end na <a href="http://www.locaweb.com.br/" target="_blank">Locaweb</a></p>
+                                <p>
+                                    <i class="icon-twitter"></i>
+                                    <a href="https://twitter.com/diegoeis" class="hover hover-3d speaker-link" target="_blank">
+                                        <span data-title="@diegoeis">@diegoeis</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="box-talk">
+                                <h3 class="talk-time">18:35- 19:35</h3>
+                                <h4 class="sub-title">As novidades do CSS4</h4>
+                                <p>Com 11 anos de experiência em desenvolvimento para web, psasou a maior parte desse tempo dirigindo sua própria empresa. Com ela trabalhou em projetos com Accenture, Whirlpool, Oi e Johnson & Johnson. Já treinou equipes de muitas empresas, dentre elas Nokia, Globo.com, Google e Yahoo!. Também fez, em parceria com o W3C Brasil, treinamentos para parceiros de todo o Brasil. Criou o Tableless.com.br, portal sobre boas práticas de desenvolvimento web front-end e outros assuntos relacionados.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-talk">
+                                <h3 class="talk-time">19:40</h3>
+                                <h4 class="sub-title">Encerramento</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="timeline-warning">Horários e ordem das apresentações poderão ser alterados até a data do evento!</p>
 
-                <ul class="timeline">
-                    <li>
-                        <div class="box-talk">
-                            <h3 class="talk-time">8:00 - 9:00</h3>
-                            <h4 class="sub-title">Credenciamento</h4>
-                            <p>Não esqueça de trazer seu RG.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img alt="Foto do Daniel Filho" src="build/img/speakers/daniel-filho.jpg">
-                            </div>
-                            <h3 class="sub-title">Daniel Filho</h3>
-                            <p>Desenvolvedor especialista na <a href="http://netshoes.com.br" target="_blank">Netshoes</a></p>
-                            <p>
-                                <i class="icon-twitter"></i>
-                                <a href="https://twitter.com/danielfilho" class="hover hover-3d speaker-link" target="_blank">
-                                    <span data-title="@danielfilho">@danielfilho</span>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">9:00- 9:20</h3>
-                            <h4 class="sub-title">Abertura / O Nascimento da Conferência CSS Brasil</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img alt="Foto do Zeh Fernandes" src="build/img/speakers/zeh-fernandes.jpg">
-                            </div>
-                            <h3 class="sub-title">Zeh Fernandes</h3>
-                            <p>Product Design na <a href="http://d3.do/" target="_blank">D3</a></p>
-                            <p>
-                                <i class="icon-twitter"></i>
-                                <a href="https://twitter.com/zehf" class="hover hover-3d speaker-link" target="_blank">
-                                    <span data-title="@zehf">@zehf</span>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">9:30- 10:15</h3>
-                            <h4 class="sub-title">Motions UI com CSS</h4>
-                            <p>O crescimento de uso de animações na interface foi um dos marcos de 2014. Apresentar esses conceitos, como animação vem sendo usada para ajudar o design e o usuário e realizar tudo isso com CSS.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-talk">
-                            <h3 class="talk-time">10:25 - 10:50</h3>
-                            <h4 class="sub-title">Coffee break</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img src="build/img/speakers/eduardo-shiota.jpg" alt="Foto do Eduardo Shiota">
-                            </div>
-                            <h3 class="sub-title">Eduardo Shiota</h3>
-                            <p>Front-End Engineer na <a href="http://www.booking.com" target="_blank">Booking.com</a></p>
-                            <p>
-                                <i class="icon-twitter"></i>
-                                <a href="https://twitter.com/shiota" class="hover hover-3d speaker-link" target="_blank">
-                                  <span data-title="@shiota">@shiota</span>
-                              </a>
-                          </p>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">10:50- 11:35</h3>
-                            <p>Dominando a tipografia na web</p>
-                            <p>A tipografia é uma prática de quase seis séculos e percorreu um longo caminho desde os tipos móveis de Gutenberg aos documentos digitais que conhecemos hoje. Mas em algum ponto, a habilidade técnica e as boas práticas dos artesãos e tipógrafos foram esquecidas por muitos desenvolvedores web, que acabam dependendo do navegador, de frameworks e tentativa-e-erro para mostrar o conteúdo de um website de maneira legível.</p>
-                            <p>Nesta palestra, iremos rever os conceitos básicos da tipografia—unidades, alinhamentos, símbolos e boas práticas; como usá-los para melhorar a identidade, arquitetura e legibilidade do conteúdo; e como fazê-lo com HTML e CSS.</p>
-                            <!-- <p>Uma das referências no desenvolvimento web brasileiro, Eduardo Shiota hoje trabalha como Front-End Engineer na <a href="http://www.booking.com" target="_blank">Booking.com</a> Amsterdã e Instrutor na <a href="http://howtocode.com.br/" target="_blank">HowTo</a>.</p> -->
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img src="build/img/speakers/almir-filho.jpg" alt="Foto do Almir Filho">
-                            </div>
-                            <div class="box-speaker-media">
-                                <img src="build/img/speakers/caio-gondim.jpg" alt="Foto do Caio Gondim">
-                            </div>
-                            <h3 class="sub-title">Almir Filho / Caio Gondim</h3>
-                            <p>
-                                <i class="icon-twitter"></i>
-                                <a href="https://twitter.com/almirfilho" class="hover hover-3d speaker-link" target="_blank">
-                                    <span data-title="@almirfilho">@almirfilho</span>
-                                </a> /
-                                <i class="icon-twitter"></i>
-                                <a href="https://twitter.com/caio_gondim" class="hover hover-3d speaker-link" target="_blank">
-                                    <span data-title="@caio_gondim">@caio_gondim</span>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">11:55- 12:40</h3>
-                            <h4 class="sub-title">Aguardando tema da palestra!</h4>
-                            <p>Almir é co-fundador do <a href="http://loopinfinito.com.br/" target="_blank">Loop Infinito</a>, onde compartilha seu conhecimento sobre front-end. Atualmente é desenvolvedor full stack na Globo.com.</p>
-                            <p>Caio é co-fundador do <a href="http://loopinfinito.com.br/" target="_blank">Loop Infinito</a> e atualmente trabalha como desenvolvedor client-side na <a href="http://www.booking.com" target="_blank">Booking.com</a> Amsterdã.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-talk">
-                            <h3 class="talk-time">12:50 - 14:10</h3>
-                            <h4 class="sub-title">Almoço</h4>
-                            <p>Várias lanchonetes e restaurantes ao redor.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img src="build/img/speakers/eduardo-matos.jpg" alt="Foto do Eduardo Matos">
-                            </div>
-                            <h3 class="sub-title">Eduardo Matos</h3>
-                            <p>CTO e Programador na <a href="http://mustachelabs.cc" target="_blank">MustacheLabs</a></p>
-                            <p>
-                                <i class="icon-twitter"></i>
-                                <a href="https://twitter.com/eduardojmatos" class="hover hover-3d speaker-link" target="_blank">
-                                    <span data-title="@eduardojmatos">@eduardojmatos</span>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">14:15- 15:00</h3>
-                            <h4 class="sub-title">Testando seu CSS!</h4>
-                            <p>Teste de integração, ok. Teste de JavaScript, ok. Teste de CSS.... O quê? Sim! Nessa palestra você vai aprender que é possível testar CSS sem muita dor de cabeça. Até o diretor de arte vai gostar.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img src="build/img/speakers/anonimo.jpg" alt="Aguardando palestrante">
-                            </div>
-                            <h3 class="sub-title">Em breve</h3>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">15:20- 16:05</h3>
-                            <h4 class="sub-title">Em breve!</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-talk">
-                            <h3 class="talk-time">16:05 - 16:30</h3>
-                            <h4 class="sub-title">Coffee break</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img src="build/img/speakers/anonimo.jpg" alt="Aguardando palestrante">
-                            </div>
-                            <h3 class="sub-title">Em breve</h3>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">16:30- 17:15</h3>
-                            <h4 class="sub-title">Em breve!</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-speaker">
-                            <div class="box-speaker-media">
-                                <img src="build/img/speakers/diego-eis.jpg" alt="Diego Eis">
-                            </div>
-                            <h3 class="sub-title">Diego Eis</h3>
-                            <p>Coordenador do time de front-end na <a href="http://www.locaweb.com.br/" target="_blank">Locaweb</a></p>
-                            <p>
-                                <i class="icon-twitter"></i>
-                                <a href="https://twitter.com/diegoeis" class="hover hover-3d speaker-link" target="_blank">
-                                    <span data-title="@diegoeis">@diegoeis</span>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="box-talk">
-                            <h3 class="talk-time">17:35- 18:20</h3>
-                            <h4 class="sub-title">As novidades do CSS4</h4>
-                            <p>Com 11 anos de experiência em desenvolvimento para web, psasou a maior parte desse tempo dirigindo sua própria empresa. Com ela trabalhou em projetos com Accenture, Whirlpool, Oi e Johnson & Johnson. Já treinou equipes de muitas empresas, dentre elas Nokia, Globo.com, Google e Yahoo!. Também fez, em parceria com o W3C Brasil, treinamentos para parceiros de todo o Brasil. Criou o Tableless.com.br, portal sobre boas práticas de desenvolvimento web front-end e outros assuntos relacionados.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box-talk">
-                            <h3 class="talk-time">18:30</h3>
-                            <h4 class="sub-title">Encerramento</h4>
-                        </div>
-                    </li>
-                </ul>
-                <p class="timeline-warning">Horários e ordem das apresentações poderão ser alterados até a data do evento!</p>
-
-                <div class="box-presenter">
-                    <h3 class="title">Apresentador</h3>
-                    <img class="presenter-media" src="build/img/speakers/daniel-filho.jpg" alt="Daniel Filho, apresentador da Conferência CSS Brasil">
-                    <h4 class="sub-title">Daniel Filho</h4>
+                    <div class="box-presenter">
+                        <h3 class="title">Apresentador</h3>
+                        <img class="presenter-media" src="build/img/speakers/daniel-filho.jpg" alt="Daniel Filho, apresentador da Conferência CSS Brasil">
+                        <h4 class="sub-title">Daniel Filho</h4>
+                    </div>
                 </div>
             </div>
 
