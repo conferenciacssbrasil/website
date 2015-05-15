@@ -6,9 +6,9 @@
 
 Please read this [Coding Style](https://github.com/LFeh/coding-style/) for [Issues](https://github.com/conferenciacssbrasil/website/issues), pull requests and coding standards.
 
-All changes must be made in `/assets` folder. The CSS should be modified using the **SASS** preprocessor.
+All changes must be made in `/assets` folder.
 
-For facilitate the contribution of any people in projects, all commit messages, pull request titles or issues discussions must be in **English**.
+For make easy the contribution of any people in projects, all commit messages, pull request titles or issues discussions must be in **English**.
 
 Before commit adjustments in project, check if exists an open issue and make references for this issue using '#' in your commit message.
 
