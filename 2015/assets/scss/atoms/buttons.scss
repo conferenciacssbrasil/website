@@ -1,0 +1,73 @@
+/*  ==========================================================================
+    Buttons
+    ========================================================================== */
+
+    @media only screen {
+
+        /*  Default
+            ========================================================================== */
+            .btn {
+                display: inline-block;
+                margin-bottom: 5px;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+                white-space: nowrap;
+                font-size: 30px;
+                padding: 20px 70px;
+                line-height: 1.2;
+                @include transition(background 0.25s ease);
+                font-family: 'gabriolaregular';
+            }
+
+            .btn:hover,
+            .btn:focus { text-decoration: none; }
+
+        /*  Colors
+            ========================================================================== */
+
+            /*  Default
+                ========================================================================== */
+                .btn {
+                    border-color: $green;
+                    color: $green;
+                }
+
+                .btn:hover,
+                .btn:focus {
+                  background-color: darken($green, 10%);
+                  color: #fff;
+                }
+
+                .btn-yellow {
+                    border-color: $yellow;
+                    color: $yellow;
+                }
+
+                .btn-yellow:hover,
+                .btn-yellow:focus {
+                  background-color: $yellow;
+                  color: $blue;
+                }
+
+        /*  Variations
+            ========================================================================== */
+            .btn-subscription { height: 80px; }
+
+            .btn-sm {
+              font-size: 20px;
+              padding: 10px 50px;
+            }
+
+    }
+
+
+    /*
+     * CSS for devices with resolution bigger than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+
+    }

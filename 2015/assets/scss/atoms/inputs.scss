@@ -1,0 +1,64 @@
+/*  ==========================================================================
+    Inputs
+    ========================================================================== */
+
+    @media only screen {
+
+        /*  Default inputs, selects and textareas
+            ========================================================================== */
+            input[type="text"],
+            input[type="password"],
+            input[type="search"],
+            input[type="tel"],
+            input[type="url"],
+            input[type="date"],
+            input[type="datetime"],
+            input[type="datetime-local"],
+            input[type="month"],
+            input[type="week"],
+            .input,
+            select,
+            .select,
+            textarea,
+            .textarea {
+                width: 100%;
+                padding: 5px 10px;
+                border: solid 1px $color-primary;
+                color: darken($color-primary, 15%);
+                margin-bottom: 15px;
+                @include transition(all .25s ease);
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus,
+            input[type="search"]:focus,
+            input[type="tel"]:focus,
+            input[type="url"]:focus,
+            input[type="date"]:focus,
+            input[type="datetime"]:focus,
+            input[type="datetime-local"]:focus,
+            input[type="month"]:focus,
+            input[type="week"]:focus,
+            .input:focus,
+            select:focus,
+            .select:focus,
+            textarea:focus,
+            .textarea:focus {
+                border-color: darken($color-primary, 25%);
+                background-color: #f5f5f5;
+            }
+
+        /*  Textarea
+            ========================================================================== */
+            .textarea { resize: vertical; }
+        
+    }
+
+
+    /*
+     * CSS for devices with resolution bigger than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+
+    }

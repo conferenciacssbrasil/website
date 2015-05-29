@@ -1,0 +1,104 @@
+/*  ==========================================================================
+    Speakers List
+    ========================================================================== */
+
+    @media only screen {
+
+        .speaker-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .speaker-item {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .speaker-thumb {
+            position: relative;
+            max-width: 180px;
+            margin: 0 auto;
+            display: block;
+            overflow: hidden;
+        }
+
+        .speaker-thumb:before,
+        .speaker-thumb:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .speaker-thumb:before {
+            content: "";
+            background-color: rgba(11,161,75, .5);
+            opacity: 0;
+            @include transform(translateY(-100%));
+            @include transition(all .3s ease);
+        }
+
+        .speaker-thumb:after {
+            text-align: center;
+            content: attr(data-social);
+            color: #fff;
+            font-size: 20px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+            line-height: 180px;
+            z-index: 1;
+            opacity: 0;
+            @include transition(all .5s ease .1s);
+            @include transform(scale(2));
+        }
+
+        .speaker-thumb:focus:before,
+        .speaker-thumb:hover:before {
+            opacity: 1;
+            @include transform(translateY(0));
+        }
+
+        .speaker-thumb:focus:after,
+        .speaker-thumb:hover:after {
+            opacity: 1;
+            @include transform(scale(1));
+        }
+
+        .speaker-thumb img { display: block; }
+
+        .speaker-title {
+            position: absolute;
+            color: #fff;
+            text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+            font-size: 20px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            line-height: 130px;
+            opacity: 0;
+            @include transform(scale(2));
+            @include transition(all .4s ease);
+        }
+
+        .speaker-thumb:focus .speaker-title,
+        .speaker-thumb:hover .speaker-title {
+            opacity: 1;
+            @include transform(scale(1));
+        }
+
+    }
+
+    @media only screen and (min-width: $breakpoint) {
+
+        .speaker-item {
+            display: inline-block;
+            margin: 15px 20px;
+        }
+
+        .speaker-thumb { max-width: 200px; }
+        .speaker-thumb:after { line-height: 200px; }
+
+    }

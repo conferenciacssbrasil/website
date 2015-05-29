@@ -1,0 +1,312 @@
+/*  ==========================================================================
+    Layout
+    ========================================================================== */
+
+    @media only screen {
+
+        /*  Line
+            ========================================================================== */
+            .line {
+                border-top: solid 5px $yellow;
+            }
+
+            .line-bottom {
+                border-top: none;
+                border-bottom: solid 5px $yellow;
+            }
+
+            .line:after,
+            .line:before {
+                top: -5px;
+                z-index: 1;
+                position: absolute;
+                content: "";
+                width: 34%;
+                height: 5px;
+             }
+
+             .line-bottom:after,
+             .line-bottom:before {
+                top: auto;
+                bottom: -5px;
+             }
+
+             .line:before {
+                left: 0;
+                background-color: $green;
+             }
+
+             .line:after {
+                right: 0;
+                background-color: $blue;
+             }
+
+
+        /*  Arrow
+            ========================================================================== */
+            .arrow {
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAeCAYAAACxHzfjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGNjdERUE0Nzk4MThFMzExOERCOEYyQTNGM0IwNkNBNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpERUM2RTI4QjVCN0YxMUU0ODk3OUQ1NkYxNTUyNDQwQiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpERUM2RTI4QTVCN0YxMUU0ODk3OUQ1NkYxNTUyNDQwQiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDAxNzlDNzMwRTIwNjgxMTgyMkFEQUIxNEZERTY5OEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjY3REVBNDc5ODE4RTMxMThEQjhGMkEzRjNCMDZDQTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4MCVXKAAABEUlEQVR42szXsQ6CMBAG4KpNWPsINzoyOvb9n4LR0VESMV5NSLRi6fX+Fi5pygDXz6MgdzIZYbuuP1p75nF7TtPdKIPzOc514eE439UAEvYh6ccxKfNRyDNj52MIMFqEFECKq1oMXQJqoKlriqApYAk051wRNAcoXFzyY9ahfILPBWbexpJtEaD+L1D5xBLqAVv0aIBLKC3wx4UARlCPAH5tQZ4dKuFjHAdO+p4NLhy8msiosi+rAvcGXXVsDc1ev+Sljvh8ExdI8vcIAuK/hHYBbAGFACMogYEEA9aoKLSCNaBVgQhoE6AG2hRY2Ga0Bwobtu2AgtZ3W2DqPYpqIdBQeI8zxwEN5SmMAdlCvAQYAEwIMkUsiJx9AAAAAElFTkSuQmCC);
+                width: 41px;
+                height: 30px;
+                display: block;
+                margin: 10px auto 20px;
+            }
+
+        /*  Loading
+            ========================================================================== */
+            .loading {
+                background-color: #fff;
+                @include box-shadow(0px 0px 150px 1px rgba(0,0,0,.2) inset);
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                @include transition(all 1s);
+                z-index: 999;
+            }
+
+            .circle {
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 150px;
+                height: 150px;
+                margin: -75px 0 0 -75px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: $green;;
+                z-index: 1001;
+                @include animation(spin 2s linear infinite);
+                @include transition(opacity .5s ease);
+            }
+
+            .circle:before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: $yellow;
+                @include animation(spin 3s linear infinite);
+            }
+
+            .circle:after {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: $blue;
+                @include animation(spin 1.5s linear infinite);
+            }
+
+            .loading.complete .circle { opacity: 0; }
+
+            .loading.complete {
+                opacity: 0;
+                z-index: -999999999;
+            }
+
+        /*  Date
+            ========================================================================== */
+            .hold-date { background-color: $green; }
+
+            .hold-date .title { margin-bottom: 0; }
+
+            .title-date { font-size: 48px; }
+
+            .hold-date .title-date,
+            .hold-date p { color: #fff; }
+            .hold-date p:first-of-type { margin-top: 25px; }
+            .hold-date p { text-shadow: 1px 1px 0 rgba(0,0,0,.3); }
+
+        /*  Local
+            ========================================================================== */
+           .hold-local {
+                background: transparent url(../img/maksoud-plaza.jpg) center center no-repeat;
+                @include background-size(cover);
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            .hold-local:after {
+                z-index: 0;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                /**/
+                background:    -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+                background:      -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+                background:     -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+                background:         radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+            }
+
+            .hold-local .row {
+                position: relative;
+                z-index: 1;
+            }
+
+            .local-box {
+                position: relative;
+                background-color: rgba(0,0,0,.5);
+                padding: 20px;
+                max-width: 500px;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            .hold-local .title {
+                color: #fff;
+                margin-bottom: 35px;
+            }
+
+            .hold-local a { color: $yellow; }
+
+            .about-local {
+                border-top: solid 1px #fff;
+                color: #fff;
+                font-size: 14px;
+                max-width: 400px;
+                margin: 0 auto 35px;
+                line-height: 1.4;
+                padding-top: 35px;
+            }
+
+        /*  Speakers
+            ========================================================================== */
+            .hold-speakers { background-color: $yellow; }
+
+            .hold-speakers .title,
+            .hold-speakers p { color: darken($yellow, 42%); }
+
+            .hold-speakers hr {
+                border: solid 1px darken($yellow, 20%);
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+            }
+
+        /*  Partners
+            ========================================================================== */
+            .hold-partners { background-color: #fff; }
+
+            .partners-group { padding: 15px 0; }
+
+            .partner-logo {
+                display: inline-block;
+                margin: 15px;
+            }
+
+            .partners-group .title { margin-bottom: 5px; }
+
+            .partner-logo a {
+                display: inline-block;
+                @include transition(opacity .3s ease, border .6s ease);
+                border: solid 5px #eee;
+            }
+
+            .partner-logo a:hover,
+            .partner-logo a:focus {
+                opacity: .8;
+                border-color: $green;
+            }
+
+            .partners-group + p {
+                border-top: solid 1px #eee;
+                padding-top: 25px;
+                margin-top: 10px;
+            }
+
+            .partner-gold img { max-width: 250px; }
+            .partner-support img { max-width: 110px; }
+
+        /*  Subscribe
+            ========================================================================== */
+            .hold-subscribe { background-color: $yellow; }
+
+            .hold-subscribe .title,
+            .hold-subscribe p { color: $gray; }
+
+            .hold-subscribe .btn {
+              border-color: $green;
+              color: $green;
+
+              &:hover {
+                background: $green;
+                color: $yellow;
+              }
+            }
+
+        /*  Host
+            ========================================================================== */
+            .hold-host { background-color: $blue; }
+
+            .hold-host .title,
+            .host-box .title a,
+            .host-box p,
+            .host-box  address { color: #fff; }
+
+            .host-box {
+                padding: 30px 0;
+
+                + .host-box { border-top: solid 1px darken($blue, 8%); }
+
+                .title { font-size: 20px; }
+
+                .title a,
+                p,
+                address { text-align: center; }
+
+                address { font-size: 14px; }
+
+                p {
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+
+                .hover-3d {
+                    color: $yellow;
+                    @include transform(translateY(10px));
+                }
+
+                .hover-3d-yellow span:after { color: $blue; }
+            }
+    }
+
+
+    /*
+     * CSS for devices with resolution bigger than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+
+        /*  Host
+            ========================================================================== */
+
+            .host-box {
+                float: left;
+                margin: 0;
+                vertical-align: top;
+                width: 33%;
+                padding: 20px;
+                @include transition(all .3s ease);
+
+                + .host-box { border: none; }
+            }
+
+            .host-box:hover {
+                background-color: darken($blue, 3%);
+                @include transform(scale(1.05));
+            }
+
+    }

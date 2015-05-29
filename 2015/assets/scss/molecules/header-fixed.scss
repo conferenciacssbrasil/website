@@ -1,0 +1,60 @@
+/*  ==========================================================================
+    Header Fixed
+    ========================================================================== */
+
+    @media only screen {
+
+        .header-fixed {
+            background: #fff;
+            background-color: rgba(255,255,255,.9);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            text-align: center;
+            z-index: 10;
+            @include box-shadow(0px 0px 5px 0 rgba(0,0,0,.35));
+        }
+
+        .header-inner {
+            @include clearfix();
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 10px;
+        }
+
+
+    /*  Nav
+        ========================================================================== */
+
+        .nav-list {
+            margin: 0 0 15px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .nav-link { font-size: 14px; }
+    }
+
+     @media only screen and (min-width: $breakpoint) {
+
+        .nav {
+            float: left;
+            padding-top: 10px;
+        }
+
+        .nav-item { margin: 0 10px; }
+
+        .nav-link { font-size: 18px; }
+
+        .header-btn {
+            margin: 0;
+            float: right;
+        }
+
+    }
