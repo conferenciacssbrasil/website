@@ -24,6 +24,9 @@
                     text-align: center;
                     line-height: 1;
                     font-size: 2em;
+                    color: white;
+                    margin: 0;
+                    @include transform(scale(.65));
                 }
 
                 .logo-intern {
@@ -89,7 +92,7 @@
                 }
 
                 .year {
-                    color: $color-terciary;
+                    color: $yellow;
                     // text-align: center;
                     // line-height: 0.5;
                     // font-size: 60px;

@@ -56,12 +56,6 @@ Typography
 
 /*  Titles
     ========================================================================== */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {  }
 
     .title {
         margin: 0 0 20px;
@@ -70,7 +64,7 @@ Typography
     }
 
     .title small {
-        font-size: 50%;
+        font-size: 65%;
         padding-top: 5px;
     }
 
@@ -96,6 +90,15 @@ Typography
         position: relative;
         top: -7px;
         font-size: 50%;
+    }
+
+    .title-thank {
+        text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+        color: #fff;
+        font-size: 42px;
+        text-transform: uppercase;
+        border-bottom: solid 1px #f5f5f5;
+        padding-bottom: 5px;
     }
 
 /*  Texts
@@ -127,6 +130,11 @@ Typography
     .conduct-code .title-mini,
     .conduct-code p { text-align: left; }
 
+    .hold-title-thank p {
+        color: #fff;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+    }
+
 
 /*  Links
     ========================================================================== */
@@ -150,5 +158,11 @@ Typography
     .title-small { font-size: 26px; }
     .title-mini { font-size: 18px; }
     .text-email { font-size: inherit; }
+
+    .title-thank {
+        color: #fff;
+        font-size: 92px;
+        letter-spacing: -1px;
+    }
 
 }

@@ -1,0 +1,104 @@
+/*  ==========================================================================
+    Social networks
+    ========================================================================== */
+
+    /*  Arrow share
+    ========================================================================== */
+    .share {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 65px;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            margin: 0;
+            position: relative;
+            @include transform(rotate(45deg));
+            @include transition(background .25s ease);
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            > span {
+                display: block;
+                @include transform(rotate(-45deg));
+                line-height: 50px;
+            }
+
+        }
+
+        /* Specific blocks */
+        li:nth-child(1) {
+            a {
+                @include transform(rotate(45deg) translate(6%, -44%));
+                background-color: #20409a;
+                z-index: 1;
+
+                &:hover {
+                    background-color: darken(#20409a, 10%);
+                }
+            }
+        }
+
+        li:nth-child(2) {
+            a {
+                @include transform(rotate(45deg) translate(30%, 30%));
+                background-color: #262e2e;
+
+                z-index: 5;
+                &:hover {
+                    background-color: darken(#262e2e, 10%);
+                }
+            }
+        }
+
+        li:nth-child(3) {
+            a {
+                @include transform(rotate(45deg) translate(-43%, 6%));
+                background-color: #52caf5;
+                z-index: 9;
+
+                &:hover {
+                    background-color: darken(#52caf5, 10%);
+                }
+            }
+        }
+    }
+
+    /*  Simple share
+        ========================================================================== */
+
+        .simple-share {
+            margin: 0;
+            padding: 10px 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        .simple-share li {
+            display: inline-block;
+        }
+
+        .simple-share a {
+            color: $yellow;
+            font-size: 28px;
+            padding: 5px;
+            @include transition(all .3s ease);
+        }
+
+        .simple-share a:hover,
+        .simple-share a:focus {
+            color: rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+            text-decoration: none;
+        }
