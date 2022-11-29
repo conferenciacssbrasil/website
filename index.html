@@ -15,12 +15,10 @@
   <meta name="google-site-verification" content="TY4hTRfJz_LbcYlkRqaiGy9avGhA5F3vJSPet9pk_Qo" />
 
   <!-- Favicon and SVG logo -->
-  <link rel="icon" href="build/ico/favicon.ico">
+  <link rel="icon" href="build/ico/css.ico">
 
   <!-- Facebook -->
   <meta property="og:image" content="https://www.conferenciacssbrasil.com.br/build/img/social-share.png" />
-  <meta property="fb:app_id" content="822801361104391" />
-  <meta property="fb:admins" content="100000808831074" />
   <meta property="og:site_name" content="Conferência CSS Brasil"/>
   <meta property="og:title" content="Conferência CSS Brasil 2023" />
   <meta property="og:description" content="A primeira conferência sobre CSS do Brasil está de volta, 21 de Janeiro de 2023 no Teatro Gazeta, em São Paulo">
@@ -28,34 +26,12 @@
   <meta property="og:url" content="https://www.conferenciacssbrasil.com.br">
   <meta property="og:image" content="https://www.conferenciacssbrasil.com.br/build/img/social-share.png">
 
+
+
   <!-- CSS -->
   <link rel="stylesheet" href="build/css/main.min.css?var=900">
 
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-56024822-1');ga('send','pageview');
-  </script>
 
-  <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-      var fbds = document.createElement('script');
-      fbds.async = true;
-      fbds.src = '//connect.facebook.net/en_US/fbds.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(fbds, s);
-      _fbq.loaded = true;
-    }
-    _fbq.push(['addPixelId', '357819701089508']);
-  })();
-  window._fbq = window._fbq || [];
-  window._fbq.push(['track', 'PixelInitialized', {}]);
-</script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=357819701089508&amp;ev=PixelInitialized" /></noscript>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JV4MZV95NM"></script>
@@ -68,46 +44,345 @@
 </script>
 
 </head>
-<body class="">
+<body class="static">
   <div id="loading" class="loading">
-    <div class="spinner">
-      <div class="circle"></div>
-    </div>
+      <div class="spinner">
+          <div class="circle"></div>
+      </div>
   </div>
   <!-- Access Key -->
   <a href="#conteudo" class="sr-only go-content" tabindex="1" accesskey="1">Ir para conteúdo</a>
 
-  <!-- Main -->
-  <main class="main line" id="conteudo" role="main">
+  <!-- Main header -->
+  <header class="header-fixed line">
+      <div class="header-inner">
+          <nav class="nav">
+              <ul class="nav-list">
+                  <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#programacao">Programação</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#patrocinadores">Patrocinadores</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+              </ul>
+          </nav>
+          <a class="header-btn btn btn-sm" href="https://www.sympla.com.br/evento/conferencia-css-brasil-2023-code-in-the-dark/1759146" target="_blank">Inscreva-se já</a>
+      </div>
+  </header>
 
-    <!-- Intro -->
-    <section class="section intro">
-      <div class="logo-wrap">
-          <h1 class="logo" role="logo">
-              <div class="hold-squares">
-                  <div class="square">
-                      <span class="letter">C</span>
+  <!-- Main -->
+  <main class="main" id="conteudo" role="main">
+
+      <!-- Intro -->
+      <section class="section intro">
+          <div class="logo-wrap">
+            <img alt="Conferência CSS Brasil" src="build/img/LOGO_V2.png">
+
+              <p class="lead">
+                  <span class="block">21 de Janeiro, 2023</span>
+                  <span class="block">Teatro Gazeta - São Paulo</span>
+              </p>
+              <!-- <span class="arrow" aria-hidden="true"></span>
+              <a class="btn btn-subscription" href="http://www.eventick.com.br/conferenciacssbrasil" target="_blank">Inscreva-se já</a> -->
+          </div>
+      </section>
+
+      <!-- About -->
+      <section class="section hold-date" id="sobre">
+          <div class="section-content">
+              <div class="row">
+                  <h2 class="title title-section title-inner-shadow">Marque na agenda</h2>
+                  <h3 class="title title-shadow title-date">21 de Janeiro de 2023
+                  <small class="block">A partir das 8:45</small></h3>
+                  <p>A Conferência CSS Brasil está de volta após 7 anos de sua primeira edição, e ela não volta sozinha! O evento contará com o Code In The Dark, competição para pessoas desenvolvedoras, testarem suas habilidades no desenvolvimento valendo prémio.</p>
+
+                  <p>A Conferência CSS Brasil 2023 + Code In The Dark é uma super produção FRONTIN.</p>
+
+                  <p>#saveTheDate 21 de Janeiro de 2023 no Teatro Gazeta em São Paulo.</p>
+
+
+
+
+              </div>
+          </div>
+      </section>
+
+      <!-- Speakers -->
+      <section class="section hold-speakers" id="palestrantes">
+          <div class="section-content">
+              <div class="row">
+                  <h2 class="title title-section">Palestrantes</h2>
+
+                  <ul class="speaker-list">
+                      <li class="speaker-item">
+                          <a href="https://twitter.com/johnnydekkers" class="speaker-thumb" data-social="@johnnydekkers" target="_blank">
+                              <h3 class="speaker-title">Jonatas Santos (John)</h3>
+                              <img class="speaker-img" src="build/img/speakers/john.jpg" alt="Foto do Jonatas Santos - John">
+                          </a>
+                      </li>
+                  </ul>
+
+                  <p>Quer fazer parte do time de palestrantes? Ainda dá tempo!</p>
+                  <a class="btn btn-sm" href="https://forms.gle/4r8YvUtxX6CK1phr6" target="_blank">Submeta sua talk!</a>
+
+
+              </div>
+          </div>
+      </section>
+
+      <!-- Schedule -->
+      <section class="section hold-schedule" id="programacao">
+          <div class="section-content">
+              <div class="row">
+                  <h2 class="title title-section">Programação</h2>
+                  <ul class="timeline">
+                      <li>
+                          <div class="box-talk">
+                              <h3 class="talk-time">a partir das 8:45</h3>
+                              <h4 class="sub-title">Credenciamento</h4>
+                              <p>Não esqueça de trazer seu RG.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="box-talk">
+                              <h3 class="talk-time">Em Breve</h3>
+                              <h4 class="sub-title">Mais Informações</h4>
+                          </div>
+                      </li>
+
+                      <li>
+                          <div class="box-talk">
+                              <h3 class="talk-time">E depois que acabar...</h3>
+                              <h4 class="sub-title">#partiu CODE IN THE DARK BRASIL</h4>
+                              <p><a href="http://codeinthedark.com.br" class="hover-3d text-email"><span data-title="www.codeinthedark.com.br">www.codeinthedark.com.br</span></a></p>
+                          </div>
+                      </li>
+                  </ul>
+                  <p class="timeline-warning">Horários e ordem das apresentações poderão ser alterados até a data do evento!</p>
+
+
+              </div>
+          </div>
+
+      </section>
+
+
+      <!-- Subscription -->
+      <section class="section hold-subscribe">
+          <div class="section-content">
+              <div class="row">
+                  <h2 class="title title-section">Junte-se a nós!</h2>
+                  <p><strong>Compartilhar</strong> conhecimento! Essa é a nossa missão!</p>
+                  <a class="btn btn-yellow btn-subscription" href="https://www.sympla.com.br/evento/conferencia-css-brasil-2023-code-in-the-dark/1759146" target="_blank">Inscreva-se já</a>
+                  <a class="btn btn-yellow btn-subscription" href="https://forms.gle/4r8YvUtxX6CK1phr6" target="_blank">Submeta sua talk!</a>
+              </div>
+          </div>
+      </section>
+
+      <!-- Partners -->
+      <section class="section hold-partners" id="patrocinadores">
+          <div class="section-content">
+              <div class="row">
+                  <h2 class="title title-section">Patrocinadores</h2>
+                  <div class="partners-group">
+
+                      <figure class="partner-logo partner-gold">
+                          <a href="https://www.twilio.com/pt-br/" target="_blank">
+                              <img src="build/img/sponsor-twilio.png" alt="Logo da Twilio">
+                          </a>
+                      </figure>
+
                   </div>
-                  <div class="square">
-                      <span class="letter">S</span>
+
+
+                  <!-- <div class="partners-group">
+                      <h3 class="title title-small">Diamante</h3>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/300x300" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/300x300" alt="">
+                          </a>
+                      </figure>
                   </div>
-                  <div class="square">
-                      <span class="letter">S</span>
+                  <div class="partners-group">
+                      <h3 class="title title-small">Ouro</h3>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/250x250" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/250x250" alt="">
+                          </a>
+                      </figure>
+                  </div>
+                  <div class="partners-group">
+                      <h3 class="title title-small">Prata</h3>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/200x200" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/200x200" alt="">
+                          </a>
+                      </figure>
+                  </div>
+                  <div class="partners-group">
+                      <h3 class="title title-small">Bronze</h3>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/150x150" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/150x150" alt="">
+                          </a>
+                      </figure>
+                  </div>
+                  <div class="partners-group">
+                      <h3 class="title title-small">Apoio</h3>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/110x110" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/110x110" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/110x110" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/110x110" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/110x110" alt="">
+                          </a>
+                      </figure>
+                      <figure class="partner-logo">
+                          <a href="#">
+                              <img src="http://placehold.it/110x110" alt="">
+                          </a>
+                      </figure>
+                  </div> -->
+
+                  <p>Apoie a Conferência CSS Brasil e valorize sua marca!
+                      <span class="block">
+                      Envie um e-mail para <a class="hover-3d hover-3d-green" href="mailto:cssconfbrasil@gmail.com"><span data-title="cssconfbrasil@gmail.com" class="text-green text-email">cssconfbrasil@gmail.com</span></a>
+                      </span>
+                  </p>
+              </div>
+          </div>
+      </section>
+
+      <!-- Local -->
+      <section class="section hold-local" id="local">
+          <div class="section-content">
+              <div class="row">
+                  <div class="local-box">
+                      <h2 class="title title-shadow">Teatro Gazeta
+                          <small class="block address">Avenida Paulista, 900 - São Paulo</small>
+                      </h2>
+                      <p class="about-local">O Teatro Gazeta é um dos mais tradicionais teatros de São Paulo e está localizado na avenida mais importante de São Paulo, a avenida Paulista. Próximo ao Metrô Trianon Masp e também à efervescente vida cultural e gastronômica da capital paulistana. Convenientemente localizado no centro financeiro da cidade, o teatro tem fácil acesso aos aeroportos de Guarulhos e Congonhas.</p>
+
+
+                      <a class="hover-3d hover-3d-yellow" href="https://www.google.com/maps/place/Teatro+Gazeta/@-23.5630985,-46.6468762,15.83z/data=!4m12!1m6!3m5!1s0x0:0x7a74b8c1ebff5ce0!2sTeatro+Gazeta!8m2!3d-23.5654054!4d-46.6513792!3m4!1s0x0:0x7a74b8c1ebff5ce0!8m2!3d-23.5654054!4d-46.6513792" target="_blank"><span data-title="Ver no Google Maps">Ver no Google Maps</span></a>
                   </div>
               </div>
-              <div class="property block">{ conferência: <span class="year">brasil</span>; }</div>
-          </h1>
-          <p class="lead">
-              <span class="block">A nova edição da primeira Conferência de CSS do Brasil, vai ficar de fora?</span>
-              <span class="block">21 de Janeiro de 2023 - Teatro Gazeta, São Paulo</span>
-          </p>
-          <span class="arrow" aria-hidden="true"></span>
-          <a class="btn btn-subscription" href="https://www.sympla.com.br/evento/conferencia-css-brasil-2023-code-in-the-dark/1759146" target="_blank">Inscreva-se agora</a>
-          <a class="btn btn-subscription" href="https://forms.gle/4r8YvUtxX6CK1phr6" target="_blank">Submeta sua talk</a>
-      </div>
-  </section>
-</footer>
+          </div>
+      </section>
 
-<script src="build/js/scripts.min.js"></script>
+      <!-- Hosts -->
+      <section class="section hold-host" id="hospedagem">
+          <div class="section-content">
+              <div class="row">
+                  <h2 class="title title-shadow title-section">Opções de hospedagem</h2>
+
+
+                  <div class="host-box">
+                      <h3 class="title"><a href="http://www.booking.com/hotel/br/sao-paulo-paulista.pt-br.html" title="Ir para Booking do Hotel Mercure" target="_blank">Hotel Mercure</a></h3>
+                      <address>Rua São Carlos do Pinhal, 87 - Bela Vista</address>
+                      <a href="http://www.booking.com/hotel/br/sao-paulo-paulista.pt-br.html" class="hover-3d hover-3d-yellow" target="_blank">
+                          <span data-title="Ver detalhes">Ver detalhes</span>
+                      </a>
+                  </div>
+
+                  <div class="host-box">
+                      <h3 class="title"><a href="http://www.accorhotels.com/pt-br/hotel-5323-ibis-budget-sao-paulo-paulista/index.shtml" title="Ir para site do Ibis Budget" target="_blank">Ibis Budget Paulista</a></h3>
+                      <address>Rua da Consolação, 2303 - Consolação</address>
+                      <a href="http://www.accorhotels.com/pt-br/hotel-5323-ibis-budget-sao-paulo-paulista/index.shtml" class="hover-3d hover-3d-yellow" target="_blank">
+                          <span data-title="Ver detalhes">Ver detalhes</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container line line-bottom" role="contentinfo" id="contato">
+      <h2 class="title title-small title-section">Conecte-se</h2>
+      <div class="hashtag">#conferenciacssbr</div>
+      <!-- Share icons -->
+      <ul class="share">
+          <li>
+              <a href="https://www.facebook.com/conferenciacssbrasil" target="_blank" title="Curta a fanpage oficial do Evento">
+                  <span class="sr-only">Facebook</span>
+                  <span class="icon-facebook" aria-hidden="true"></span>
+              </a>
+          </li>
+          <li>
+              <a href="https://www.instagram.com/conferenciacssbrasil/" target="_blank" title="Mais novidades do evento no nosso Instagram, siga-nos!">
+                  <span class="sr-only">Instagram</span>
+                  <span class="icon-instagram" aria-hidden="true"></span>
+              </a>
+          </li>
+          <li>
+              <a href="https://twitter.com/confcssbrasil" target="_blank" title="Estamos também no Twitter! Siga-nos!">
+                  <span class="sr-only">Twitter</span>
+                  <span class="icon-twitter" aria-hidden="true"></span>
+              </a>
+          </li>
+      </ul>
+
+      <!-- Holding -->
+      <section class="holding">
+          <h2 class="title title-small title-section">Uma Super Produção</h2>
+          <ul class="list-holding">
+              <li>
+                  <a class="hover" target="_blank" href="http://www.frontinsampa.com.br" title="Acessar site do FRONTIN" target="_blank">
+                      <img src="build/img/frontin.png" alt="Uma super produção FRONTIN">
+                  </a>
+              </li>
+          </ul>
+
+          <p class="website">
+              <a href="mailto:cssconfbrasil@gmail.com" class="hover-3d text-email"><span data-title="cssconfbrasil@gmail.com">cssconfbrasil@gmail.com</span></a>
+          </p>
+      </section>
+
+      <!-- Conduct code -->
+      <div class="conduct-link">
+          <a href="https://pt-br.confcodeofconduct.com/" class="btn btn-sm" target="_blank">Código de Conduta</a>
+      </div>
+  </footer>
+
+  <script src="build/js/scripts.min.js"></script>
 </body>
 </html>
