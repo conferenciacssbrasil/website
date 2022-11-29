@@ -1,4 +1,4 @@
-![css-brasil](https://cloud.githubusercontent.com/assets/1345662/5505846/c1f9cbc6-877b-11e4-9609-4008a15d7739.png)
+![css-brasil](https://conferenciacssbrasil.com.br/build/img/social-share.png)
 
 [Visit the website](http://www.conferenciacssbrasil.com.br) :heart_eyes:
 
