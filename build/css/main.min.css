@@ -516,6 +516,7 @@ body:after {
   .lead {
       font-size: 22px;
       margin-top: 50px;
+      margin-bottom: 50px;
       color: #ffffff;
   }
   .text-yellow {
@@ -835,6 +836,8 @@ body:after {
       -moz-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       width: 80%;
+      max-width: 600px;
+
   }
   .logo {
       position: relative;
