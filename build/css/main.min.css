@@ -594,6 +594,7 @@ body:after {
   .btn {
       border-color: #0ba14b;
       color: #0ba14b;
+      font-family: inherit;
   }
   .btn:hover,
   .btn:focus {
@@ -836,7 +837,7 @@ body:after {
       -moz-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       width: 80%;
-      max-width: 600px;
+      max-width: 500px;
 
   }
   .logo {
